@@ -1,0 +1,130 @@
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotateinv {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes zoomOut {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+
+@keyframes opa {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+//page loader
+@keyframes lds-ellipsis1 {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes lds-ellipsis3 {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+
+@keyframes lds-ellipsis2 {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(24px, 0);
+    }
+}
+
+//ring
+@keyframes ring {
+    0% {
+        transform: rotate(15deg);
+        box-shadow: 0px 0px 10px rgba(243, 23, 23, 0.5);
+    }
+    25% {
+        transform: rotate(-15deg);
+        box-shadow: 0px 0px 0px rgba(243, 23, 23, 0.5);
+    }
+    50% {
+        transform: rotate(15deg);
+        box-shadow: 0px 0px 10px rgba(243, 23, 23, 0.5);
+    }
+    75% {
+        transform: rotate(-15deg);
+        box-shadow: 0px 0px 0px rgba(243, 23, 23, 0.5);
+    }
+    100% {
+        transform: rotate(15deg);
+        box-shadow: 0px 0px 10px rgba(243, 23, 23, 0.5);
+    }
+}
+
+@keyframes pulse-ring {
+    0% {
+        transform: scale(.33);
+    }
+    80%,
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes pulse-dot {
+    0% {
+        transform: scale(.8);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(.8);
+    }
+}
+
+@keyframes jelly {
+    25% {
+        transform: scale(0.9, 1.1);
+    }
+    50% {
+        transform: scale(1.1, 0.9);
+    }
+    75% {
+        transform: scale(0.95, 1.05);
+    }
+}

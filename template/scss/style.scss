@@ -1,0 +1,39 @@
+//Libs
+@import url("../js/libs/swiper/swiper-bundle.min.css");
+@import url("../js/libs/boxicons-2.1.2/css/boxicons.css");
+@import url("../js/libs/magnific/magnific-popup.css");
+@import "./core/reset";
+@import "./core/animation";
+@import "./core/base";
+@import "./core/mixin";
+@import "./core/variable";
+@import "./core/flex";
+@import "./core/font";
+//Component
+@import "./component/header";
+@import "./component/footer";
+@import "./component/btn";
+@import "./component/text";
+@import "./component/swiper";
+@import "./component/mona-txt";
+@import "./component/scroll";
+@import "./component/mobilemenu";
+@import "./component/sidebarMenu";
+@import "./component/btnTop";
+//Layout
+//Page
+@import "./page/about";
+@import "./page/bandage";
+@import "./page/contact";
+@import "./page/equipment";
+@import "./page/hemostatic";
+@import "./page/home";
+@import "./page/news";
+@import "./page/news1";
+@import "./page/product-detail";
+@import "./page/product-detail1";
+@import "./page/product-detail2";
+@import "./page/recruit";
+@import "./page/recruit1";
+@import "./page/research";
+@import "./page/thread";
