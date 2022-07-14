@@ -1,0 +1,16 @@
+.sec-product {
+    .silde-image {
+        width: 50%;
+        overflow: hidden;
+
+        .img {
+            @include abs-fw;
+        }
+
+        .gallery-thumbs {
+            .swiper-slide {
+                padding-top: 21.5%;
+            }
+        }
+    }
+}

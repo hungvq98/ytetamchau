@@ -6,6 +6,7 @@ export default function timerModule() {
 
     const newYears = "18 Jul 2022";
 
+    
     function countdown() {
         const newYearsDate = new Date(newYears);
         const currentDate = new Date();
@@ -27,8 +28,12 @@ export default function timerModule() {
         return time < 10 ? `0${time}` : time;
     }
 
-    // initial call
-    countdown();
+    if (daysEl) {
+        // initial call
+        countdown();
+    
+        setInterval(countdown, 1000);
+        
+    }
 
-    setInterval(countdown, 1000);
 }

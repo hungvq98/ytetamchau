@@ -7,17 +7,19 @@ import PopupModule from "./module/PopupModule.js";
 import tabModule from "./module/tabModule.js";
 import timerModule from "./module/timerModule.js";
 import toTopModule from "./module/toTopModule.js";
+import SwiperF from "./module/swiper.js";
 // import toTopModule from "./module/toTopModule.js"
 
 window.addEventListener("DOMContentLoaded", () => {
-    moduleSwiper();
-    textareaModule();
-    collapseModule();
-    menumobileModule();
-    sidebarMenuModule();
-    PopupModule();
-    tabModule();
-    timerModule();
-    toTopModule();
-    // toTopModule();
+  moduleSwiper();
+  textareaModule();
+  collapseModule();
+  menumobileModule();
+  sidebarMenuModule();
+  PopupModule();
+  tabModule();
+  timerModule();
+  toTopModule();
+  SwiperF();
+  // toTopModule();
 });
