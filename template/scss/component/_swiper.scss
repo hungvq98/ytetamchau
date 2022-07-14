@@ -82,9 +82,7 @@
 
 .mySwiper .swiper-slide-thumb-active {
     opacity: 1;
-    border: 6px solid $color-green;
     @include max(1200px) {
-        border: 4px solid $color-green;
     }
 
 }
