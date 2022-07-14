@@ -1,0 +1,30 @@
+.breadcrumb {
+    @include flexx();
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    align-items: stretch;
+
+    @media (max-width: 800px) {
+        margin-top: 0;
+    }
+
+    &-item {
+        @include flexx();
+        align-items: center;
+
+        &:not(:first-child) {
+            &::before {
+                padding: 8px;
+                color: white;
+                content: "/\00a0";
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 29px;
+            }
+        }
+    }
+
+    &-link {
+        color: #fff;
+    }
+}

@@ -9,6 +9,7 @@
 @import "./core/variable";
 @import "./core/flex";
 @import "./core/font";
+@import "./core/global";
 //Component
 @import "./component/header";
 @import "./component/footer";
@@ -20,6 +21,8 @@
 @import "./component/mobilemenu";
 @import "./component/sidebarMenu";
 @import "./component/btnTop";
+@import "./component/component";
+@import "./component/breadcrumb";
 //Layout
 //Page
 @import "./page/about";
