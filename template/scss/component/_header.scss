@@ -1,0 +1,14 @@
+.header {
+    position: fixed;
+    width: 100%;
+    &-top {
+        height: 110px;
+        background-color: $color-white;
+        padding: 14px 0;
+    }
+    &-bottom {
+        height: 56px;
+        background-color: $color-gray;
+        @include flex(center, flex-start);
+    }
+}
