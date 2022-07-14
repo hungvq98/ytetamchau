@@ -56,7 +56,59 @@
 
 
 // button
+.btn {
+    flex-shrink: 0;
+    padding: 1rem 3rem 1.1rem;
+    width: max-content;
+    @include mid-flex();
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    transition: all 0.4s;
+    cursor: pointer;
+    position: relative;
+    z-index: 3;
+    overflow: hidden;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background: $color-FF9900;
 
+    &::after {
+        position: absolute;
+        content: "";
+        z-index: -1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        // background: $color-main;
+        -webkit-clip-path: circle(0 at center);
+        clip-path: circle(0 at center);
+        transition: 0.4s linear;
+        border-radius: 2px;
+    }
+
+    &:hover {
+        @media(min-width: 991px) {
+            background: $color-green;
+
+            &::after {
+                -webkit-clip-path: circle(105% at center);
+                clip-path: circle(105% at center);
+            }
+        }
+    }
+
+    &-l {
+        width: 20.1rem;
+    }
+
+    &-md {
+        width: 17.4rem;
+    }
+}
 
 
 // img class
