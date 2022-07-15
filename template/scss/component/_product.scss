@@ -1,9 +1,34 @@
 .product {
-    &-gallery {
-      .swiper-slide {
+  &-gallery {
+    padding: 3rem 0rem;
+    // margin: 0 -1.5rem;
+
+    .swiper-slide {
+      //   padding: 0.75rem;
+      .gen-relative {
         padding-top: 72%;
+        position: relative;
+        width: 100%;
+        
       }
     }
 
-    
+    .img {
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    }
   }
+
+  &-info {
+    width: 50%;
+
+    @media (min-width: 1200px) {
+      padding-left: 4.5rem;
+      padding-right: 7rem;
+    }
+
+  }
+
+  &-wrap {
+    margin: 0 -1.5rem;
+  }
+}

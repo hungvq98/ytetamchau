@@ -13,15 +13,21 @@
     }
 
     &-l {
-
+        font-weight: 700;
+        @include fz-32;
+        line-height: 1.25;
     }
 
     &-1 {
-
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 1.38;
     }
 
     &-2 {
-
+        font-weight: 700;
+        @include fz-20;
+        line-height: 1.15;
     }
 
     &-3 {
@@ -58,12 +64,11 @@
 // button
 .btn {
     flex-shrink: 0;
-    padding: 1rem 3rem 1.1rem;
+    padding: 1.1rem 3rem 1rem;
     width: max-content;
-    @include mid-flex();
-    font-weight: 600;
+    font-weight: 400;
     font-size: 1.6rem;
-    line-height: 1.5rem;
+    line-height: 2.4rem;
     text-transform: uppercase;
     color: #FFFFFF;
     transition: all 0.4s;
@@ -74,6 +79,17 @@
     border-radius: 5px;
     box-sizing: border-box;
     background: $color-FF9900;
+    @include flexx;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+
+    &::before {
+        content: url("../assets/img/svg/arrow.svg");
+        height: 5.76px;
+        width: 18px;
+        margin-top: -0.3rem;
+        margin-left: 1.5rem;
+    }
 
     &::after {
         position: absolute;
@@ -83,7 +99,7 @@
         top: 0;
         width: 100%;
         height: 100%;
-        // background: $color-main;
+        background: $color-green;
         -webkit-clip-path: circle(0 at center);
         clip-path: circle(0 at center);
         transition: 0.4s linear;
@@ -92,7 +108,7 @@
 
     &:hover {
         @media(min-width: 991px) {
-            background: $color-green;
+            background: $color-FF9900;
 
             &::after {
                 -webkit-clip-path: circle(105% at center);
@@ -102,11 +118,11 @@
     }
 
     &-l {
-        width: 20.1rem;
+        min-width: 20.1rem;
     }
 
     &-md {
-        width: 17.4rem;
+        min-width: 17.4rem;
     }
 }
 
@@ -118,15 +134,14 @@
 
 // space section
 .padding-sec {
-    padding-top: 3rem;
-    padding-bottom: 9.6rem;
+    padding: 6rem 0;
 
     @media (max-width: 800px) {
-        padding-bottom: 5.6rem;
+        padding: 4.5rem 0;
     }
 
     @media (max-width: 420px) {
-        padding-bottom: 3rem;
+        padding: 3rem 0;
     }
 }
 
@@ -172,7 +187,6 @@
     }
 }
 
-
 .padding-sec-4 {
     padding-top: 9.6rem;
     padding-bottom: 4.8rem;
@@ -208,7 +222,6 @@
     }
 }
 
-
 .padding-sec-mid {
     padding: 4.8rem 0;
     @media (max-width: 800px) {
@@ -238,6 +251,9 @@
     margin-bottom: 4rem;
 }
 
+.m-b-30 {
+    margin-bottom: 3rem;
+}
 
 .m-b-24 {
     margin-bottom: 2.4rem;
@@ -251,6 +267,26 @@
     }
 }
 
+.m-b-16 {
+    margin-bottom: 1.6rem;
+
+    @media (max-width: 800px) {
+        margin-bottom: 1rem;
+    }
+
+    @media (max-width: 600px) {
+        margin-bottom: 0.5rem;
+    }
+}
+
+
+.m-b-8 {
+    margin-bottom: 0.8rem;
+}
+
+.m-t-8 {
+    margin-top: 0.8rem;
+}
 
 // border-radius-100px
 .br-100 {
@@ -327,4 +363,8 @@
 // other
 .read-more {
 
+}
+
+.flex-item {
+    padding: 0 1.5rem;
 }
