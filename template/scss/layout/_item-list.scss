@@ -6,6 +6,7 @@
         margin: 0 -0.5rem;
     }
     &-item {
+        position: relative;
         border-radius: 5px;
         overflow: hidden;
         width: calc(25% - 30px);
@@ -27,7 +28,20 @@
             width: calc(100% - 10px);
             margin: 5px;
         }
-
+        .newtag {
+            height: 15px;
+            width: 100px;
+            text-transform: uppercase;
+            position: absolute;
+            background-color: $color-FF9900;
+            color: $color-white;
+            @include flex(center,center);
+            @include fz-10;
+            z-index: 3;
+            transform: rotate(45deg);
+            right: -38px;
+            top: 5px;
+        }
         &:hover {
             .img-over {
                 opacity: 1;

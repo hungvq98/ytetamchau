@@ -1,6 +1,7 @@
 .category {
     position: sticky;
     top:88px;
+    margin-bottom: 20px;
     &-search {
         width: 100%;
         @include flex(center,center);

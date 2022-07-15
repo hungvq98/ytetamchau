@@ -364,7 +364,6 @@
 .read-more {
 
 }
-<<<<<<< HEAD
 //date
 .date {
     @include flex(center,flex-start);
@@ -375,9 +374,8 @@
         @include fz-16;
         font-weight: 400;
     }
-=======
-
+}
 .flex-item {
     padding: 0 1.5rem;
->>>>>>> dc3a275289b36af672e554a55c8c44a486fe4526
+    
 }
