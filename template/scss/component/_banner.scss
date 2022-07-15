@@ -1,0 +1,46 @@
+.banner {
+    width: 100%;
+    position: relative;
+    height: calc(100vw * (250/1728));
+
+    @include max(600px) {
+        height: calc(100vw * (250/1000));
+
+    }
+    @include max(400px) {
+        height: calc(100vw * (400/1000));
+
+    }
+
+    @include flex-col(center, center);
+
+    h1 {
+        color: $color-white;
+        position: relative;
+        @include fz-32;
+        font-weight: 700;
+        text-transform: uppercase;
+        z-index: 2;
+    }
+
+    &-breadscrumb {
+        color: $color-white;
+        position: relative;
+        z-index: 2;
+        @include flex(center, center);
+
+        a {
+            color: $color-white;
+            @include fz-16;
+            font-weight: 700;
+        }
+
+        img {
+            margin: 0 12px;
+        }
+    }
+
+    img {
+        @include imgCover;
+    }
+}

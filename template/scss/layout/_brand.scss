@@ -1,0 +1,41 @@
+.brand {
+    width: 100%;
+
+    &-wrap {
+        padding: 60px 0;
+        background-color: $color-gray;
+
+        .swiper-slide {
+            min-height: 142px;
+            border-radius: 5px;
+            @include flex(center, center);
+            position: relative;
+            overflow: hidden;
+            &:hover {
+                .slide-over {
+                    opacity: 1;
+                }
+            }
+            .slide-over {
+                position: absolute;
+                @include flex(center, center);
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                padding: 20px;
+                @include fz-14;
+                color: $color-white;
+                background-color: $color-black-opa6;
+                font-weight: 400;
+                transition: 0.3s;
+                opacity: 0;
+            }
+
+            img {
+                height: 80%;
+                width: auto;
+            }
+        }
+    }
+}

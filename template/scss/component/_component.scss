@@ -328,3 +328,14 @@
 .read-more {
 
 }
+//date
+.date {
+    @include flex(center,flex-start);
+    padding-top: 10px;
+    span {
+        margin-left: 10px;
+        margin-top: 4px;
+        @include fz-16;
+        font-weight: 400;
+    }
+}

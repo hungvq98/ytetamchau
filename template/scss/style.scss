@@ -13,7 +13,7 @@
 //Component
 @import "./component/header";
 @import "./component/footer";
-@import "./component/btn";
+@import "./component/pagination";
 @import "./component/text";
 @import "./component/swiper";
 @import "./component/mona-txt";
@@ -24,7 +24,12 @@
 @import "./component/component";
 @import "./component/breadcrumb";
 @import "./component/product";
+@import "./component/banner";
 //Layout
+@import "./layout/item-list";
+@import "./layout/brand";
+@import "./layout/category";
+
 //Page
 @import "./page/about";
 @import "./page/bandage";
