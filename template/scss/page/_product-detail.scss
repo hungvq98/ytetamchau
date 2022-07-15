@@ -4,6 +4,10 @@
       width: 50%;
       margin-top: -3rem;
 
+      @media (max-width: 600px) {
+        width: 100%;
+      }
+
       .img {
         @include abs-fw;
         border-radius: 5px;
@@ -46,6 +50,10 @@
     border-top: 1px solid $color-black-opa1;
     @include flexx;
     align-items: center;
+
+    @media (max-width: 800px) {
+      padding: 1.2rem 0;
+    }
 
     &:last-child {
       border-bottom: 1px solid $color-black-opa1;

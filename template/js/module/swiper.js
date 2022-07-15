@@ -3,10 +3,21 @@ export default function SwiperF() {
   
     if (glPro) {
       const galleryThumbs = new Swiper(".gallery-thumbs", {
-        spaceBetween: 30,
+        spaceBetween: 10,
         slidesPerView: 3,
         slidesPerGroup: 1,
         watchSlidesProgress: true,
+        breakpoints: {
+          360:{
+            spaceBetween: 15,
+          },
+          600:{
+            spaceBetween: 20,
+          },
+          1024:{
+            spaceBetween: 30,
+          }
+        }
       });
       const galleryTop = new Swiper(".product-gallery", {
         spaceBetween: 50,

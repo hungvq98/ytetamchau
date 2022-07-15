@@ -253,6 +253,10 @@
 
 .m-b-30 {
     margin-bottom: 3rem;
+
+    @media (max-width: 800px) {
+        margin-bottom: 1.5rem;
+    }
 }
 
 .m-b-24 {
