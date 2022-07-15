@@ -1,45 +1,79 @@
 .sec-product {
-  .slide {
-    &-image {
-      width: 50%;
-      margin-top: -3rem;
+  overflow: hidden;
+}
+.slide {
+  &-image {
+    width: 50%;
+    margin-top: -3rem;
 
-      @media (max-width: 600px) {
+    @media (max-width: 600px) {
+      width: 100%;
+    }
+
+    .img {
+      @include abs-fw;
+      border-radius: 5px;
+    }
+
+    .gallery-thumbs {
+      overflow: hidden;
+      .gen-relative {
+        padding-top: 70%;
+        position: relative;
         width: 100%;
-      }
-
-      .img {
-        @include abs-fw;
+        border: 1px solid $color-black-opa1;
         border-radius: 5px;
+        transition: 0.3s;
       }
 
-      .gallery-thumbs {
-        .gen-relative {
-          padding-top: 70%;
-          position: relative;
-          width: 100%;
-          border: 1px solid $color-black-opa1;
-          border-radius: 5px;
-          transition: 0.3s;
-        }
-
-        .swiper {
-          &-slide {
-            &-thumb-active {
-              .gen-relative {
-                border: 1px solid $color-FF9900;
-              }
+      .swiper {
+        &-slide {
+          &-thumb-active {
+            .gen-relative {
+              border: 1px solid $color-FF9900;
             }
           }
         }
       }
     }
+  }
 
-    &-wrap {
-      width: calc(100% + 4rem);
-      overflow: hidden;
-      padding: 0 2rem;
-      margin-left: -2rem;
+  &-wrap {
+    width: calc(100% + 4rem);
+    overflow: hidden;
+    padding: 0 2rem;
+    margin-left: -2rem;
+  }
+}
+
+.sec-info {
+  ::-webkit-scrollbar {
+    height: 4px;
+    
+  }
+}
+
+.sec-related-products {
+  background: $color-EBF5F0;
+  overflow: hidden;
+
+  .swiper-slide {
+    background: transparent;
+  }
+
+  .list-content {
+    margin: 0 -1.5rem;
+    overflow: hidden;
+
+    @media (max-width: 900px) {
+      margin: 0 -0.5rem;
+    }
+  }
+
+  .list-item {
+    width: calc(100% - 3rem);
+    .info {
+      background: $color-F8F8F8;
     }
   }
 }

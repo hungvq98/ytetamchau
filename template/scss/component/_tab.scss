@@ -7,12 +7,17 @@
     transition: all 0.5s ease-out;
     cursor: pointer;
 
+    @media (max-width: 600px) {
+      padding: 0.8rem 1.5rem;
+    }
+
     &:not(:last-child) {
       margin-right: 0.6rem;
     }
 
     &.active {
       opacity: 1;
+      pointer-events: none;
     }
   }
 
@@ -20,6 +25,14 @@
     border: 1px solid $color-black-opa1;
     padding: 2.4rem;
     overflow: hidden;
+
+    @media (max-width: 800px) {
+      padding: 1.6rem;
+    }
+
+    @media (max-width: 420px) {
+      padding: 1rem;
+    }
 
     &-item {
       visibility: hidden;
@@ -46,6 +59,15 @@
 
   &-table {
     width: calc(100% * 8 / 12);
+
+    @media (max-width: 1200px) {
+      width: 75%;
+    }
+
+    @media (max-width: 800px) {
+      width: 100%;
+    }
+
     th,
     td {
       border: 1px solid $color-black-opa1;
@@ -53,10 +75,39 @@
 
     td {
       padding: 1.4rem 3rem;
+
+      @media (max-width: 800px) {
+        padding: 1rem 1.5rem;
+      }
+    }
+
+    tr {
+      @media (max-width: 500px) {
+        display: flex;
+        flex-direction: column;
+        width: max-content;
+        width: 100%;
+      }
     }
 
     .row-1 {
       width: 24rem;
+
+      @media (max-width: 800px) {
+        width: 19rem;
+      }
+
+      @media (max-width: 500px) {
+        width: 100%;
+      }
+    }
+  }
+
+  &-lst {
+    overflow-x: auto;
+
+    .lst {
+      width: max-content;
     }
   }
 }

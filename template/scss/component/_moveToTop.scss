@@ -1,0 +1,64 @@
+.move-to-top {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    background-color: $color-FF9900;
+    position: fixed;
+    bottom: 6.5rem;
+    right: 2.4rem;
+    z-index: 992;
+    transform: translateX(2rem);
+    opacity: 0;
+    transition: 0.3s linear;
+    cursor: pointer;
+    visibility: hidden;
+    @include flexx();
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    justify-content: space-evenly;
+    -webkit-justify-content: space-evenly;
+    align-items: center;
+    -webkit-align-items: center;
+  
+    @media (max-width: 1200px) {
+      bottom: 6.5rem;
+      right: 1.5rem;
+    }
+  
+    @media (max-width: 600px) {
+      bottom: 1.5rem;
+    }
+  
+    &.active {
+      visibility: visible;
+      transform: translateX(0);
+      opacity: 1;
+    }
+    .pyramid {
+      display: block;
+      width: 0;
+      height: 0;
+      z-index: 2;
+      border: 6px solid transparent;
+      border-bottom: 6px solid #fff;
+      margin-top: -6px;
+      &:nth-child(1) {
+        animation: moveTop 1s linear 0.4s infinite;
+      }
+      &:nth-child(2) {
+        animation: moveTop 1s linear 0.2s infinite;
+      }
+      &:nth-child(3) {
+        animation: moveTop 1s linear 0s infinite;
+      }
+    }
+  
+    &:hover {
+      @media (min-width: 1025px) {
+        box-shadow: 0 0 10px #fff;
+      }
+    }
+  }
+  

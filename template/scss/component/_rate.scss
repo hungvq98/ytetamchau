@@ -1,8 +1,10 @@
 .rate {
   &-item {
     margin-right: 0.2rem;
+    color: $color-D9D9D9;
 
     &.active {
+      color: $color-yellow;
         img {
           filter: invert(7%) sepia(71%) saturate(2385%) hue-rotate(347deg)
             brightness(105%) contrast(113%);

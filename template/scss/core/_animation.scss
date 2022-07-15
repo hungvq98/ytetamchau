@@ -128,3 +128,18 @@
         transform: scale(0.95, 1.05);
     }
 }
+
+@keyframes moveTop {
+    0% {
+      opacity: 0;
+    }
+    33% {
+      opacity: 1;
+    }
+    66% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }

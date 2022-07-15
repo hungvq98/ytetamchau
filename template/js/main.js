@@ -8,6 +8,8 @@ import tabModule from "./module/tabModule.js";
 import timerModule from "./module/timerModule.js";
 import toTopModule from "./module/toTopModule.js";
 import SwiperF from "./module/swiper.js";
+import Popup from "./module/popup.js";
+import ScrollTopModule from "./module/ScrollTopModule.js";
 // import toTopModule from "./module/toTopModule.js"
 
 window.addEventListener("DOMContentLoaded", () => {
@@ -21,5 +23,7 @@ window.addEventListener("DOMContentLoaded", () => {
   timerModule();
   toTopModule();
   SwiperF();
+  Popup();
+  ScrollTopModule()
   // toTopModule();
 });
