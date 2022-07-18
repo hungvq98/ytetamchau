@@ -1,7 +1,8 @@
 export default function SwiperF() {
     const glPro = document.querySelector(".product-gallery");
     const relatedpro = document.querySelector(".related-list");
-    const glPu = document.querySelector(".product-gallery-pu")
+    const glPu = document.querySelector(".product-gallery-pu");
+    const circle = document.querySelector(".circle-slide");
   
     if (glPro) {
       const galleryThumbs = new Swiper(".gallery-thumbs", {
@@ -54,6 +55,17 @@ export default function SwiperF() {
         navigation: {
           nextEl: '.pu-next',
           prevEl: '.pu-prev',
+        },
+      });
+    }
+
+    if (circle) {
+      const swiper = new Swiper(".circle-slide", {
+        spaceBetween: 50,
+        slidesPerView: 1,
+        pagination: {
+          el: '.circle-pagination',
+          clickable: true,
         },
       });
     }

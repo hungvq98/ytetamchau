@@ -12,9 +12,11 @@ export default function Popup() {
       });
     });
 
-    clode.addEventListener("click", () => {
-        pu.classList.remove("active");
-        faeBg.classList.remove("show");
-    })
+    if (clode) {
+      clode.addEventListener("click", () => {
+          pu.classList.remove("active");
+          faeBg.classList.remove("show");
+      })
+    }
   }
 }

@@ -10,6 +10,7 @@ import toTopModule from "./module/toTopModule.js";
 import SwiperF from "./module/swiper.js";
 import Popup from "./module/popup.js";
 import ScrollTopModule from "./module/ScrollTopModule.js";
+import Circle from "./module/circle.js";
 // import toTopModule from "./module/toTopModule.js"
 
 window.addEventListener("DOMContentLoaded", () => {
@@ -24,6 +25,7 @@ window.addEventListener("DOMContentLoaded", () => {
   toTopModule();
   SwiperF();
   Popup();
-  ScrollTopModule()
+  ScrollTopModule();
+  Circle();
   // toTopModule();
 });

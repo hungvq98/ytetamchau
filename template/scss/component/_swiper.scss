@@ -26,4 +26,18 @@
         left: 2.3rem;
     }
   }
+
+  &-pagination {
+    &-bullet {
+      width: 1.5rem;
+      height: 1.5rem;
+      background: $color-FF9900;
+      opacity: 1;
+      transition: all 0.5s ease-out;
+
+      &-active {
+        background: $color-FFD900;
+      }
+    }
+  }
 }

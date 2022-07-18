@@ -1,0 +1,10 @@
+.sec-cate {
+    padding-top: 12rem;
+    background: $color-F8F8F8;
+    .cate {
+        &-wrap {
+            width: 100%;
+            justify-content: center;
+        }
+    }
+}
