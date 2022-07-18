@@ -7006,11 +7006,11 @@ section {
   transition: 0.3s;
 }
 
-.circle {
+.shape {
   width: 33.3333333333%;
   position: relative;
 }
-.circle::before {
+.shape::before {
   position: absolute;
   content: "";
   top: 50%;
@@ -7028,19 +7028,19 @@ section {
   border-top: 3px solid transparent;
   border-bottom: 3px solid transparent;
 }
-.circle-wrap {
+.shape-wrap {
   box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.16);
   border-radius: 50%;
   overflow: hidden;
   width: 100%;
   height: 100%;
 }
-.circle-slide {
+.shape-slide {
   width: 100%;
   height: 100%;
   position: relative;
 }
-.circle-slide .swiper-slide {
+.shape-slide .swiper-slide {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -7053,28 +7053,29 @@ section {
   align-items: center;
   cursor: pointer;
 }
-.circle-pagination {
+.shape-pagination {
   top: 50%;
   margin-top: 1.6rem;
   bottom: auto;
 }
-.circle-col {
+.shape-col {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
 }
-.circle-col.left {
+.shape-col.left {
   right: 120%;
   width: 90%;
   height: auto;
 }
-.circle-item-sm {
+.shape-item-sm {
   position: relative;
+  cursor: pointer;
 }
-.circle-item-sm:not(:last-child) {
+.shape-item-sm:not(:last-child) {
   margin-bottom: 2.7rem;
 }
-.circle-item-sm::before {
+.shape-item-sm::before {
   position: absolute;
   content: "";
   width: 100%;
@@ -7082,8 +7083,18 @@ section {
   background: white;
   z-index: -1;
   top: 3px;
+  transition: all 0.5s ease-in-out;
 }
-.circle-icon {
+@media (min-width: 600px) {
+  .shape-item-sm:hover::before {
+    top: -1.2rem;
+    height: 100%;
+  }
+  .shape-item-sm:hover .shape-info {
+    max-height: 50rem;
+  }
+}
+.shape-icon {
   width: 5rem;
   height: 5rem;
   background: black;
@@ -7100,9 +7111,10 @@ section {
   border-radius: 50%;
   transform: translateX(50%);
 }
-.circle-info {
+.shape-info {
   max-height: 0;
   overflow: hidden;
+  transition: all 0.5s;
 }
 
 .bandage-pro-wrap {

@@ -2,7 +2,7 @@ export default function SwiperF() {
     const glPro = document.querySelector(".product-gallery");
     const relatedpro = document.querySelector(".related-list");
     const glPu = document.querySelector(".product-gallery-pu");
-    const circle = document.querySelector(".circle-slide");
+    const circle = document.querySelector(".shape-slide");
   
     if (glPro) {
       const galleryThumbs = new Swiper(".gallery-thumbs", {
@@ -60,11 +60,11 @@ export default function SwiperF() {
     }
 
     if (circle) {
-      const swiper = new Swiper(".circle-slide", {
+      const swiper = new Swiper(".shape-slide", {
         spaceBetween: 50,
         slidesPerView: 1,
         pagination: {
-          el: '.circle-pagination',
+          el: '.shape-pagination',
           clickable: true,
         },
       });
