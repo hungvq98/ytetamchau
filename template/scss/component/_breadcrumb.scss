@@ -3,7 +3,10 @@
     flex-wrap: wrap;
     margin-top: 3rem;
     align-items: stretch;
-
+    z-index: 2;
+    &.wh {
+        margin-top: 10px;
+    }
     @media (max-width: 800px) {
         margin-top: 0;
     }
@@ -14,10 +17,22 @@
 
         &:not(:first-child) {
             &::before {
-                padding:0 8px;
+                padding: 0 8px;
                 width: 1rem;
                 height: auto;
                 content: url("../assets/img/svg/icon-breadcrumb.png");
+
+                
+            }
+        }
+        &.wh:not(:first-child) {
+            &::before {
+                padding: 0 8px;
+                width: 1rem;
+                height: auto;
+                content: url("../assets/img/svg/icon-breadcrumb-wh.png");
+
+                
             }
         }
     }
@@ -25,5 +40,9 @@
     &-link {
         // color: #fff;
         font-weight: bold;
+
+        &.wh {
+            color: #ffffff;
+        }
     }
 }

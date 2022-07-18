@@ -1,4 +1,12 @@
 .mona-content {
+    .title {
+        @include fz-32;
+        font-weight: 700;
+    }
+    .sub-title {
+        @include fz-20;
+        font-weight: 700;
+    }
     p {
         margin: 16px 0;
         @include fz-16;
