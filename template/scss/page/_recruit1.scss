@@ -31,4 +31,9 @@
         padding: 60px 0;
         background-color: $color-green-light;
     }
+    .title-relate {
+        @include fz-32;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
 }

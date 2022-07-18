@@ -1,0 +1,117 @@
+.contact {
+    &-wrap {
+        padding: 60px 0;
+    }
+    &-content {
+        margin:0 -15px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &-title {
+        @include fz-32;
+        font-weight: 700;
+    }
+    &-left {
+        width: calc(50% - 30px);
+        margin: 15px;
+        @include max(700px) {
+            width: 100%;
+        }
+        .form-group {
+            @include flex(flex-start,flex-start);
+            flex-wrap: wrap;
+            margin: 0 -8px;
+            
+            &-input {
+                width: calc(50% - 16px);
+                margin: 8px;
+                @include max(400px) {
+                    width: 100%;
+                }
+                &:last-child {
+                    width: 100%;
+                }
+                input {
+                    border-radius: 10px;
+                    border: 1px solid $color-black-opa4;
+                    padding: 5px 16px;
+                    width: 100%;
+                    &::placeholder {
+                        color: $color-black-opa3;
+                    }
+                    &::-moz-placeholder {
+                        color: $color-black-opa3;
+                    }
+                    &::-webkit-input-placeholder {
+                        color: $color-black-opa3;
+                    }
+                    &:focus {
+                        border: 1px solid $color-green;
+                    }
+                }
+                textarea {
+                    border-radius: 10px;
+                    border: 1px solid $color-black-opa4;
+                    padding: 16px;
+                    width: 100%;
+                    &::placeholder {
+                        color: $color-black-opa3;
+                    }
+                    &::-moz-placeholder {
+                        color: $color-black-opa3;
+                    }
+                    &::-webkit-input-placeholder {
+                        color: $color-black-opa3;
+                    }
+                    &:focus {
+                        border: 1px solid $color-green;
+                    }
+                }
+            }
+            
+        }
+    }
+    &-right {
+        width: calc(50% - 30px);
+        margin: 15px;
+        @include max(700px) {
+            width: 100%;
+        }
+    }
+    &-info {
+        @include flex(center, flex-start);
+        margin-bottom: 16px;
+        .imgs {
+            @include flex(center, center);
+            @include cir(90px);
+            @include max(680px) {
+                @include cir(50px);
+                img {
+                    @include sqr(20px);
+                }
+            }
+            background-color: $color-green;
+            margin-right: 16px;
+            flex-shrink: 0;
+        }
+        .info {
+            span {
+                @include fz-20;
+                font-weight: 700;
+            }
+            p {
+                @include fz-16;
+                font-weight: 400;
+            }
+        }
+    }
+}
+.map {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    iframe {
+        width: 100%;
+        display: block;
+    }
+}
