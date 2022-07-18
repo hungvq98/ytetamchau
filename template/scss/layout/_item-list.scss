@@ -11,6 +11,8 @@
         overflow: hidden;
         width: calc(25% - 30px);
         margin: 15px;
+        background: white;
+        cursor: pointer;
 
         @include max(900px) {
             width: calc(25% - 10px);

@@ -1,0 +1,99 @@
+.circle {
+    width: calc(100% * 4 /12);
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: "";
+        top: 50%;
+        left: 50%;
+        width: 120%;
+        height: 120%;
+        transform: translate(-50%, -50%);
+        display: block;
+        float: left;
+        border-radius: 50%;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -khtml-border-radius: 50%;
+        border: 3px solid $color-FF9900;
+        border-top: 3px solid transparent;
+        border-bottom: 3px solid transparent;
+    }
+
+    &-wrap {
+        box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.16);
+        border-radius: 50%;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+    }
+
+    &-slide {
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+        .swiper {
+            &-slide {
+                @include flexx;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+            }
+
+        }
+    }
+
+    &-pagination {
+        top: 50%;
+        margin-top: 1.6rem;
+        bottom: auto;
+    }
+
+    &-col {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+
+        &.left {
+            right: 120%;
+            width: 90%;
+            height: auto;
+        }
+    }
+
+    &-item {
+        &-sm {
+            // background: white;
+            position: relative;
+            &:not(:last-child) {
+                margin-bottom: 2.7rem;
+            }
+
+            &::before{
+                position: absolute;
+                content: "";
+                width: 100%;
+                height: calc(100% - 6px);
+                background: white;
+                z-index: -1;
+                top: 3px;
+            }
+        }
+    }
+
+    &-icon {
+        width: 5rem;
+        height: 5rem;
+        background: black;
+        @include mid-flex();
+        border-radius: 50%;
+        transform: translateX(50%)
+    }
+
+    &-info {
+        max-height: 0;
+        overflow: hidden;
+    }
+}

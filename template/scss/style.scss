@@ -27,10 +27,13 @@
 @import "./component/banner";
 @import "./component/rate";
 @import "./component/tab";
+@import "./component/popup";
+@import "./component/moveToTop";
 //Layout
 @import "./layout/item-list";
 @import "./layout/brand";
 @import "./layout/category";
+@import "./layout/circle";
 
 //Page
 @import "./page/about";
@@ -48,3 +51,4 @@
 @import "./page/recruit1";
 @import "./page/research";
 @import "./page/thread";
+@import "./page/chi-phau-thuat";
