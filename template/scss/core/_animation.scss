@@ -43,6 +43,15 @@
     }
 }
 
+@keyframes zoomSlowIn {
+    0% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
 //page loader
 @keyframes lds-ellipsis1 {
     0% {
