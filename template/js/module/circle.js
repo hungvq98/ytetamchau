@@ -1,5 +1,5 @@
 export default function Circle() {
-  const circle = document.querySelector(".shape");
+  const circle = document.querySelector(".shape-wrap");
 
   if (circle) {
     const setHeight = () => {

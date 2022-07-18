@@ -11,6 +11,7 @@ import SwiperF from "./module/swiper.js";
 import Popup from "./module/popup.js";
 import ScrollTopModule from "./module/ScrollTopModule.js";
 import Circle from "./module/circle.js";
+import PointsConnect from "./module/PointsConnect.js";
 // import toTopModule from "./module/toTopModule.js"
 
 window.addEventListener("DOMContentLoaded", () => {
@@ -27,5 +28,6 @@ window.addEventListener("DOMContentLoaded", () => {
   Popup();
   ScrollTopModule();
   Circle();
+  PointsConnect();
   // toTopModule();
 });
