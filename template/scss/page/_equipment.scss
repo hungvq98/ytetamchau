@@ -351,6 +351,7 @@
             .equipment-product {
                 width: calc(50% - 30px);
                 margin: 15px;
+                cursor: pointer;
 
                 @include max(700px) {
                     width: 100%;

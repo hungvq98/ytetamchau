@@ -6541,7 +6541,8 @@ canvas {
 }
 
 .popup-detail,
-.popup-cv {
+.popup-cv,
+.popup-equipment {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -6558,71 +6559,83 @@ canvas {
 }
 @media (max-width: 800px) {
   .popup-detail,
-.popup-cv {
+.popup-cv,
+.popup-equipment {
     padding: 5rem 0 5rem;
   }
 }
 @media (max-width: 600px) {
   .popup-detail,
-.popup-cv {
+.popup-cv,
+.popup-equipment {
     padding: 3rem 0 3rem;
   }
 }
 .popup-detail.active,
-.popup-cv.active {
+.popup-cv.active,
+.popup-equipment.active {
   transform: translate(-50%, -50%) scale(1);
   visibility: visible;
   opacity: 1;
 }
 .popup-detail .product-gallery-pu,
-.popup-cv .product-gallery-pu {
+.popup-cv .product-gallery-pu,
+.popup-equipment .product-gallery-pu {
   padding: 0;
 }
 .popup-detail .product-gallery-pu .img,
-.popup-cv .product-gallery-pu .img {
+.popup-cv .product-gallery-pu .img,
+.popup-equipment .product-gallery-pu .img {
   box-shadow: none;
 }
 .popup-detail .product-gallery-pu .swiper-slide .gen-relative,
-.popup-cv .product-gallery-pu .swiper-slide .gen-relative {
+.popup-cv .product-gallery-pu .swiper-slide .gen-relative,
+.popup-equipment .product-gallery-pu .swiper-slide .gen-relative {
   padding-top: 94.5%;
   position: relative;
   width: 100%;
 }
 @media (max-width: 600px) {
   .popup-detail .product-gallery-pu .swiper-slide .gen-relative,
-.popup-cv .product-gallery-pu .swiper-slide .gen-relative {
+.popup-cv .product-gallery-pu .swiper-slide .gen-relative,
+.popup-equipment .product-gallery-pu .swiper-slide .gen-relative {
     padding-top: 60%;
   }
 }
 .popup-detail .slide-image,
-.popup-cv .slide-image {
+.popup-cv .slide-image,
+.popup-equipment .slide-image {
   margin-top: 0;
   padding-left: 6.9rem;
   padding-right: 6.9rem;
 }
 @media (max-width: 1024px) {
   .popup-detail .slide-image,
-.popup-cv .slide-image {
+.popup-cv .slide-image,
+.popup-equipment .slide-image {
     padding-left: 5rem;
     padding-right: 5rem;
   }
 }
 @media (max-width: 800px) {
   .popup-detail .slide-image,
-.popup-cv .slide-image {
+.popup-cv .slide-image,
+.popup-equipment .slide-image {
     padding-left: 3rem;
     padding-right: 3rem;
   }
 }
 @media (max-width: 600px) {
   .popup-detail .slide-image,
-.popup-cv .slide-image {
+.popup-cv .slide-image,
+.popup-equipment .slide-image {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
 }
 .popup-detail .product-info,
-.popup-cv .product-info {
+.popup-cv .product-info,
+.popup-equipment .product-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6630,30 +6643,36 @@ canvas {
 }
 @media (max-width: 600px) {
   .popup-detail .product-info,
-.popup-cv .product-info {
+.popup-cv .product-info,
+.popup-equipment .product-info {
     width: 100%;
   }
 }
 .popup-detail .product-wrap,
-.popup-cv .product-wrap {
+.popup-cv .product-wrap,
+.popup-equipment .product-wrap {
   overflow: hidden;
 }
 .popup-detail .slide-image,
-.popup-cv .slide-image {
+.popup-cv .slide-image,
+.popup-equipment .slide-image {
   width: calc(58.3333333333% - 3rem);
 }
 @media (max-width: 600px) {
   .popup-detail .slide-image,
-.popup-cv .slide-image {
+.popup-cv .slide-image,
+.popup-equipment .slide-image {
     width: 100%;
   }
 }
 .popup-detail .link-arrow,
-.popup-cv .link-arrow {
+.popup-cv .link-arrow,
+.popup-equipment .link-arrow {
   margin-top: 1.6rem;
 }
 .popup-detail .color-label::before,
-.popup-cv .color-label::before {
+.popup-cv .color-label::before,
+.popup-equipment .color-label::before {
   display: none;
 }
 
@@ -6662,7 +6681,7 @@ canvas {
 }
 @media (max-width: 1024px) {
   .popup-cv {
-    padding: 5rem 5rem 5.5rem;
+    padding: 4rem 5rem 4rem;
   }
 }
 @media (max-width: 600px) {
@@ -6677,6 +6696,11 @@ canvas {
 }
 .popup-cv .upload {
   margin: 2.4rem 0;
+}
+@media (max-width: 1024px) {
+  .popup-cv .upload {
+    margin: 1.5rem 0;
+  }
 }
 @media (max-width: 800px) {
   .popup-cv .upload {
@@ -6795,6 +6819,12 @@ canvas {
 .form-wrap {
   margin: 0 -1.5rem;
 }
+@media (max-height: 600px) {
+  .form-wrap {
+    max-height: 30rem;
+    overflow: auto;
+  }
+}
 @media (max-width: 800px) {
   .form-wrap {
     margin: 0 -1rem;
@@ -6805,6 +6835,11 @@ canvas {
   padding: 0 1.5rem;
   position: relative;
   margin-bottom: 3rem;
+}
+@media (max-height: 600px) {
+  .form-control {
+    margin-bottom: 2rem;
+  }
 }
 @media (max-width: 800px) {
   .form-control {
@@ -8217,6 +8252,7 @@ canvas {
 .equipment-pro-list .equipment-product {
   width: calc(50% - 30px);
   margin: 15px;
+  cursor: pointer;
 }
 @media screen and (max-width: 700px) {
   .equipment-pro-list .equipment-product {

@@ -1,37 +1,67 @@
 export default function Popup() {
   const itemPr = document.querySelectorAll(".list-item");
   const pu = document.querySelector(".popup-detail");
-  const clode = document.querySelector(".popup-detail .close");
   const faeBg = document.querySelector(".bg-fade");
   const pucv = document.querySelector(".popup-cv");
   const btncv = document.querySelector(".cv-pops");
+  const puEqipment = document.querySelector(".popup-equipment");
+  const lstItemEqip = document.querySelectorAll(".equipment-product");
 
-  if (itemPr) {
-    itemPr.forEach((ele, i) => {
-      ele.addEventListener("click", () => {
-        pu.classList.add("active");
-        faeBg.classList.add("show");
+  const showPU = (btn, pupc) => {
+    btn.addEventListener("click", (e) => {
+      pupc.classList.add("active");
+      faeBg.classList.add("show");
+      document.body.style.overflow = "hidden";
+      const close = pu.querySelector(".close");
+      close.addEventListener("click", () => {
+        pupc.classList.remove("active");
+        faeBg.classList.remove("show");
+        document.body.style.overflow = "auto";
       });
     });
+  };
 
-    if (clode) {
-      clode.addEventListener("click", () => {
-        pu.classList.remove("active");
-        faeBg.classList.remove("show");
+  const showPUListBtn = (listBtn, pupc) => {
+    if (pupc) {
+      listBtn.forEach((ele, i) => {
+        ele.addEventListener("click", () => {
+          pupc.classList.add("active");
+          faeBg.classList.add("show");
+          document.body.style.overflow = "hidden";
+
+          const readMore = ele.querySelector(".btn");
+          readMore.addEventListener("click", () => {
+            pupc.classList.remove("active");
+            faeBg.classList.remove("show");
+            document.body.style.overflow = "auto";
+          });
+        });
       });
+
+      const close = pupc.querySelector(".close");
+
+      if (close) {
+        close.addEventListener("click", () => {
+          pupc.classList.remove("active");
+          faeBg.classList.remove("show");
+          document.body.style.overflow = "auto";
+        });
+      }
     }
+  };
+
+  if (itemPr) {
+    showPUListBtn(itemPr, pu);
   }
 
   if (pucv) {
-    btncv.addEventListener("click", (e) => {
-      console.log("rregeg")
-      pucv.classList.add("active");
-      faeBg.classList.add("show");
-      const close = pucv.querySelector(".close");
-      close.addEventListener("click", () => {
-        pucv.classList.remove("active");
-        faeBg.classList.remove("show");
-      });
+    showPU(btncv, pucv);
+  }
+
+  if (lstItemEqip) {
+    showPUListBtn(lstItemEqip, puEqipment);
+    lstItemEqip.forEach((ele) => {
+      console.log("click");
     });
   }
 }
