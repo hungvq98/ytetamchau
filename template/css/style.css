@@ -173,12 +173,34 @@ table {
     opacity: 1;
   }
 }
+@keyframes opa2 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 @keyframes zoomSlowIn {
   0% {
     transform: scale(1.1);
   }
   100% {
     transform: scale(1);
+  }
+}
+@keyframes click {
+  0% {
+    transform: translateX(10px) translateY(10px);
+  }
+  50% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translateX(10px) translateY(10px);
   }
 }
 @keyframes lds-ellipsis1 {
@@ -7867,6 +7889,110 @@ canvas {
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+
+.home-banner {
+  height: 37.6157407407vw;
+}
+.home-banner .homeSwiper {
+  width: 100%;
+  height: 100%;
+}
+.home-banner .homeSwiper .home-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #339966;
+}
+.home-banner .homeSwiper .home-btn::after {
+  font-size: 12px;
+  color: #FFFFFF;
+}
+.home-banner .swiper-slide {
+  height: 100%;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.home-banner .swiper-slide img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.home-wrap {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.home-wrap ul li {
+  position: relative;
+  padding-left: 20px;
+  font-size: 1.6rem;
+  line-height: 2;
+}
+.home-wrap ul li::after {
+  position: absolute;
+  content: url("../assets/img/svg/tick.png");
+  left: 0;
+  top: 1px;
+}
+.home-wrap .btn {
+  margin-top: 20px;
+}
+.home-title {
+  font-size: 5rem;
+  font-weight: 700;
+}
+@media only screen and (max-width: 1200px) {
+  .home-title {
+    font-size: 4.5rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .home-title {
+    font-size: 3.4rem;
+  }
+}
+.home-para {
+  font-size: 1.6rem;
+  margin: 20px 0;
+}
+.home-btns {
+  position: relative;
+}
+.home-btns .hands {
+  position: absolute;
+  right: -10px;
+  bottom: -40%;
+  z-index: 4;
+  transition: 0.3s ease-in-out;
+  animation: click 1s linear infinite;
+}
+.home-btns .hands img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: static;
+  height: 30px;
+}
+.home-btns .cir {
+  position: absolute;
+  right: 4px;
+  bottom: -5px;
+  z-index: 4;
+  transition: 0.3s ease-in-out;
+  animation: opa2 1s linear infinite;
+}
+.home-btns .cir img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: static;
+  height: 12px;
 }
 
 .news-wrap {
