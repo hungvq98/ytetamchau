@@ -2,18 +2,34 @@
     &-wrap {
         padding: 60px 0;
     }
+
+    &-popup {
+        &-overlay {
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background-color: $color-black-opa3;
+            position: fixed;
+            z-index: 2;
+        }
+    }
+
     &-box {
         display: flex;
         flex-wrap: wrap;
         margin: 0 -15px;
         margin-bottom: 20px;
+
         @include max(800px) {
             flex-wrap: wrap-reverse;
         }
     }
+
     &-left {
         margin: 0 15px;
         width: calc(50% - 30px);
+
         @include max(800px) {
             width: 100%;
             margin-bottom: 20px;
@@ -23,16 +39,20 @@
     &-right {
         margin: 0 15px;
         width: calc(50% - 30px);
+
         .img {
             img {
                 @include img100x;
             }
         }
+
         @include max(800px) {
             width: 100%;
             margin-bottom: 20px;
+
             .img {
                 @include flex(center, center);
+
                 img {
                     height: 300px;
                     width: auto;
@@ -53,9 +73,11 @@
             right: -10px;
             top: 7px;
             @include fz-14;
+
             @include max(1200px) {
                 top: 5px;
             }
+
             @include max(800px) {
                 top: 3px;
             }
@@ -77,6 +99,7 @@
         background-color: $color-gray;
         border-radius: 50px 0 50px 0;
         margin-top: 16px;
+
         ul {
             li {
                 padding-left: 20px;
@@ -96,74 +119,129 @@
             }
         }
     }
+
     &-product {
         overflow: hidden;
         border-radius: 5px;
-        
-        .img{
+        position: relative;
+
+        &.wh {
+            z-index: 3;
+        }
+
+        .img {
             height: 40%;
             min-height: 300px;
             background-color: $color-white;
             border-radius: 5px 5px 0 0;
             border: 1px solid $color-black-opa3;
             padding: 25px;
-            @include flex(center,center);
+            @include flex(center, center);
             position: relative;
+
             img {
                 @include imgContain;
             }
-            
+
         }
+
         .line {
             height: 8px;
             width: 100%;
             @include flex(center, flex-start);
+
             &-1 {
                 width: 25%;
                 background-color: $color-line1;
                 height: 100%;
             }
+
             &-2 {
                 width: 25%;
                 background-color: $color-line2;
                 height: 100%;
             }
+
             &-3 {
                 width: 25%;
                 background-color: $color-line3;
                 height: 100%;
             }
+
             &-4 {
                 width: 25%;
                 background-color: $color-line4;
                 height: 100%;
             }
         }
+
         .info {
             background-color: $color-green;
             padding: 24px;
+
+            &.wh {
+                background-color: $color-white;
+                @include flex(flex-start, flex-start);
+
+                ul {
+                    li {
+                        padding-left: 20px;
+                        position: relative;
+                        @include fz-16;
+                        line-height: 2;
+                        @include flex(flex-start, flex-start);
+                        color: $color-black;
+
+                        &::after {
+                            content: '';
+                            @include cir(4px);
+                            background-color: $color-black;
+                            position: absolute;
+                            left: 0;
+                            top: 13px;
+                        }
+                    }
+                }
+            }
+
             .title {
                 @include fz-32;
                 font-weight: 700;
                 color: $color-white;
                 display: flex;
+
+                &.wh {
+                    color: $color-black;
+                }
+
                 h4 {
                     &:nth-child(2) {
                         margin-left: 20px;
                     }
                 }
             }
+
             .sub-title {
                 @include fz-20;
                 font-weight: 700;
-                color:$color-white;
+                color: $color-white;
+
+                &.wh {
+                    color: $color-black;
+                }
             }
+
             p {
                 color: $color-white;
                 @include fz-16;
                 font-weight: 400;
                 @include limit(3);
+
+                &.wh {
+                    color: $color-black;
+                }
             }
+
             ul {
                 li {
                     padding-left: 20px;
@@ -172,6 +250,7 @@
                     line-height: 2;
                     @include flex(flex-start, flex-start);
                     color: $color-white;
+
                     &::after {
                         content: '';
                         @include cir(4px);
@@ -182,38 +261,111 @@
                     }
                 }
             }
+
+            &-left {
+                width: 50%;
+                padding-right: 15px;
+            }
+
+            &-right {
+                width: 50%;
+
+                .collapse {
+                    
+                    box-shadow: none;
+
+                    margin-bottom: 20px;
+
+                    &.active {
+                        box-shadow: $shadowall;
+                        border-radius: 5px 5px 0 0;
+                    }
+
+                    span {
+                        font-weight: 700;
+                    }
+
+                    &-head {
+                        overflow: hidden;
+                        @include flex(center, space-between);
+                        text-transform: uppercase;
+                        height: 44px;
+                        padding: 15px;
+                        border: 1px solid $color-black-opa1;
+                        border-radius: 5px;
+                        transition: 0.3s;
+
+                        &.active {
+                            border: 1px solid transparent;
+
+                            img {
+                                transform: rotate(90deg);
+                            }
+                        }
+
+                        img {
+                            transition: 0.3s;
+                            transform: rotate(270deg);
+                            margin-right: 10px;
+                        }
+                    }
+
+                    &-body {
+                        padding: 15px;
+                        padding-top: 0;
+                        display: none;
+
+                        .line {
+                            margin: auto;
+                            width: 98%;
+                            height: 1px;
+                            background-color: $color-black-opa1;
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+            }
         }
+
         .btn {
             margin-top: 30px;
         }
     }
+
     &-detail {
         background-color: $color-gray;
         padding: 60px 0;
+
         &-title {
             @include fz-32;
             font-weight: 700;
         }
     }
+
     &-pro {
         &-list {
             @include flex(flex-start, flex-start);
             margin: 0 -15px;
             flex-wrap: wrap;
+
             .equipment-product {
                 width: calc(50% - 30px);
                 margin: 15px;
+
                 @include max(700px) {
                     width: 100%;
                 }
             }
         }
     }
+
     &-content {
         &-wrap {
             padding: 60px 0;
+
             .imgs {
                 width: 100%;
+
                 img {
                     @include img100x;
                 }
