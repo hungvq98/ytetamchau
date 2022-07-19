@@ -12,11 +12,13 @@
             position: relative;
             overflow: hidden;
             background-color: $color-white;
+
             &:hover {
                 .slide-over {
                     opacity: 1;
                 }
             }
+
             .slide-over {
                 position: absolute;
                 @include flex(center, center);
@@ -37,6 +39,18 @@
                 height: 80%;
                 width: auto;
             }
+        }
+
+        
+    }
+
+    &.white-bg {
+        .brand-wrap {
+            background: white;
+        }
+
+        .swiper-slide {
+            border: 1px solid $color-black-opa1;
         }
     }
 }
