@@ -7304,7 +7304,7 @@ canvas {
 .shape-item-sm:not(:last-child) {
   margin-bottom: 3rem;
 }
-@media (min-width: 800px) {
+@media (min-width: 1024px) {
   .shape-item-sm:hover .shape-info-wrap::before {
     top: -2rem;
     height: calc(100% + 2rem);
