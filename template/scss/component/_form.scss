@@ -1,0 +1,133 @@
+.form {
+    &-wrap {
+        margin: 0 -1.5rem;
+
+        @media (max-width: 800px) {
+            margin: 0 -1rem;
+        }
+    }
+
+    &-control {
+        width: 50%;
+        padding: 0 1.5rem;
+        position: relative;
+        margin-bottom: 3rem;
+
+        @media (max-width: 800px) {
+            padding: 0 1rem;
+        }
+        @media (max-width: 800px) {
+            margin-bottom: 2rem;
+        }
+
+        @media (max-width: 600px) {
+            width: 100%;
+        }
+
+        @media (max-width: 350px) {
+            margin-bottom: 1.7rem;
+        }
+
+        .input {
+            width: 100%;
+            background: #F4F3F4;
+            border: 1px solid $color-black-opa3;
+            border-radius: 10px;
+            padding: 1.1rem 3rem;
+            transition: all 0.3s ease-out;
+
+            @media (max-width: 800px) {
+                padding: 0.8rem 2rem;
+            }
+
+            @media (max-width: 350px) {
+                font-size: 1.2rem;
+            }
+        }
+
+        .input-focus {
+            border: 1px solid $color-FF9900;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &-label {
+        position: absolute;
+        top: 1.2rem;
+        left: 4.5rem;
+        font-weight: 400;
+        font-size: 1.4rem;
+        line-height: 157%;
+        color: $color-black-opa3;
+        padding: 0 0.8rem;
+        border-radius: 4px;
+        margin-left: -0.8rem;
+        pointer-events: none;
+        transition: all 0.2s ease-in-out;
+
+        @media (max-width: 800px) {
+            left: 2.75rem;
+            top: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            font-size: 1.2rem;
+        }
+
+        &.clicked {
+            top: 0;
+            background: $color-FF9900;
+            transform: translateY(-80%);
+            color: white;
+        }
+    }
+
+    &-w100 {
+        width: 100%;
+    }
+
+    &-content {
+        .input {
+            min-height: 20.8rem;
+
+            @media (max-width: 800px) {
+                min-height: 15rem;
+            }
+
+            @media (max-width: 600px) {
+                min-height: 12rem;
+            }
+
+            @media (max-width: 420px) {
+                min-height: 10rem;
+            }
+
+            @media (max-width: 350px) {
+                min-height: 7rem;
+            }
+        }
+    }
+
+    &-upload {
+        input {
+            display: none;
+        }
+
+        .label-upload {
+            font-weight: 400;
+            @include fz-16;
+            line-height: 1.62;
+            letter-spacing: 0.05em;
+            padding: 0.4rem 1.6rem;
+            background: $color-F7F7F7;
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            display: block;
+            margin-right: 1.5rem;
+        }
+    }
+
+}
