@@ -2,42 +2,80 @@
     &-banner {
         height: calc(100vw * (650/1728));
 
+        @include max(1200px) {
+            height: calc(100vw * (800/1728));
+        }
+
+        @include max(1200px) {
+            height: calc(100vw * (1000/1728));
+
+        }
+
+        @include max(720px) {
+            height: calc(100vw * (1500/1728));
+
+        }
+
+        @include max(530px) {
+            height: calc(100vw * (1800/1728));
+
+        }
+
+        @include max(390px) {
+            height: calc(100vw * (2300/1728));
+
+        }
+
         .homeSwiper {
             width: 100%;
             height: 100%;
+
             .home-btn {
                 @include cir(30px);
                 background-color: $color-green;
+
                 &::after {
                     font-size: 12px;
                     color: $color-white;
                 }
             }
         }
-    
+
         .swiper-slide {
             height: 100%;
             position: relative;
             width: 100%;
             height: 100%;
-            
-    
+
+
             img {
                 @include imgCover;
             }
-    
+
         }
+    }
+    &-overlay {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background:linear-gradient(to right, $color-white-opa6, $color-white-opa2);
+        z-index: 2;
     }
     &-wrap {
         position: relative;
         height: 100%;
         @include flex-col(flex-start, center);
+        z-index: 2;
+
         ul {
             li {
                 position: relative;
                 padding-left: 20px;
                 @include fz-16;
                 line-height: 2;
+
                 &::after {
                     position: absolute;
                     content: url("../assets/img/svg/tick.png");
@@ -46,21 +84,36 @@
                 }
             }
         }
+
         .btn {
             margin-top: 20px;
 
         }
     }
+
     &-title {
         @include fz-50;
         font-weight: 700;
+
+        @include max(600px) {
+            @include fz-30;
+        }
+        @include max(400px) {
+            @include fz-20;
+        }
     }
+
     &-para {
         @include fz-16;
         margin: 20px 0;
+        @include max(500px) {
+            margin: 10px 0;
+        }
     }
+
     &-btns {
         position: relative;
+
         .hands {
             position: absolute;
             right: -10px;
@@ -68,12 +121,14 @@
             z-index: 4;
             transition: 0.3s ease-in-out;
             animation: click 1s linear infinite;
+
             img {
                 @include img100x;
                 position: static;
                 height: 30px;
             }
         }
+
         .cir {
             position: absolute;
             right: 4px;
@@ -81,10 +136,301 @@
             z-index: 4;
             transition: 0.3s ease-in-out;
             animation: opa2 1s linear infinite;
+
             img {
                 @include img100x;
                 position: static;
                 height: 12px;
+            }
+        }
+    }
+
+    &-two {
+        height: calc(100vw * (500/1728));
+        position: relative;
+
+        @include max(1000px) {
+            height: calc(100vw * (800/1728));
+        }
+        @include max(580px) {
+            height: calc(100vw * (1200/1728));
+        }
+        @include max(450px) {
+            height: calc(100vw * (2100/1728));
+        }
+        @include max(350px) {
+            height: calc(100vw * (2300/1728));
+        }
+
+        &-imgs {
+            position: absolute;
+            bottom: 0px;
+            height: 110%;
+            z-index: 2;
+
+            @include max(700px) {
+                display: none;
+            }
+
+            img {
+                @include img100x;
+            }
+        }
+
+        &::before {
+            content: '';
+            width: 100%;
+            height: 100%;
+            background-color: $color-white-opa2;
+            backdrop-filter: blur(150px);
+            position: absolute;
+            z-index: -1;
+
+            @include max(700px) {
+                backdrop-filter: blur(80px);
+            }
+        }
+
+        &::after {
+            content: '';
+            @include cir(350px);
+            background-color: $color-green;
+            position: absolute;
+            z-index: -2;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 20%;
+
+            @include max(700px) {
+                @include cir(150px);
+            }
+        }
+
+        &-wrap {
+            height: 100%;
+        }
+
+        &-info {
+            width: 55%;
+            margin-left: auto;
+            height: 100%;
+
+            @include max(700px) {
+                margin: 0;
+                width: 100%;
+
+            }
+
+            @include flex-col(flex-start, center);
+
+            h2 {
+                @include fz-32;
+                font-weight: 700;
+            }
+
+            h4 {
+                @include fz-20;
+                font-weight: 700;
+            }
+
+            p {
+                @include fz-16;
+                font-weight: 400;
+                margin: 15px 0;
+            }
+        }
+
+        &-btns {
+            @include flex(center, flex-start);
+            @include max(350px) {
+                flex-wrap: wrap;
+            }
+            .btn {
+                margin-right: 20px;
+                @include max(350px) {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        &-phone {
+            @include flex(center, flex-start);
+
+            .imgs {
+                @include cir(30px);
+                @include flex(center, center);
+                margin-right: 16px;
+                background-color: $color-FF9900;
+
+                img {
+                    @include cir(15px);
+                }
+            }
+
+            span {
+                color: $color-green;
+            }
+        }
+    }
+
+    &-three {
+        height: calc(100vw * (550/1728));
+        position: relative;
+        @include max(1000px) {
+            height: calc(100vw * (800/1728));
+        }
+        @include max(580px) {
+            height: calc(100vw * (1200/1728));
+        }
+        @include max(450px) {
+            height: calc(100vw * (2100/1728));
+        }
+        @include max(350px) {
+            height: calc(100vw * (2300/1728));
+        }
+        img {
+            @include imgCover;
+        }
+
+        &-wrap {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            @include flex-col(center, center);
+
+            span {
+                @include fz-20;
+                font-weight: 700;
+                text-align: center;
+                text-transform: uppercase;
+                text-align: center;
+            }
+
+            p {
+                @include fz-32;
+                text-align: center;
+                font-weight: 700;
+                margin: 16px 0;
+            }
+        }
+    }
+
+    &-four {
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        padding: 60px 0;
+
+        &::after {
+            content: '';
+            width: 70%;
+            height: 100%;
+            right: 0;
+            top: 0;
+            background-color: $color-green-light;
+            position: absolute;
+            @include max(1200px) {
+                width: 100%;
+            }
+        }
+
+        &-wrap {
+            width: calc(100vw - ((100vw - 1200px)/2));
+            height: 100%;
+            margin-right: auto;
+            @include max(1200px) {
+                width: 100%;
+            }
+        }
+
+        &-box {
+            width: 100%;
+            height: 100%;
+            @include flex(center, flex-start);
+
+            &-left {
+                height: 100%;
+                width: 30%;
+                overflow: hidden;
+                margin-left: 20%;
+                @include max(1300px) {
+                    margin-left: 10%;
+                }
+                @include max(1200px) {
+                    display: none;
+                }
+                .imgs {
+                    position: relative;
+                    overflow: hidden;
+                    border-radius: 5px;
+                    z-index: 2;
+                    
+
+                    img {
+                        @include img100x;
+                    }
+                }
+
+            }
+
+            &-right {
+                height: 100%;
+                width: 70%;
+                position: relative;
+                z-index: 2;
+                padding-left: 50px;
+                @include flex(center, flex-start);
+                flex-wrap: wrap;
+                @include max(1200px) {
+                    width: 100%;
+                    padding-left: 0;
+                }
+
+            }
+        }
+
+        &-item {
+            position: relative;
+            background-color: $color-white;
+            border-radius: 5px;
+            padding: 20px;
+            padding-left: 11%;
+            width: calc(50% - 30px);
+            margin: 25px 15px;
+            box-shadow: $shadowall;
+            @include max(600px) {
+                width: 100%;
+                padding-top: 40px;
+            }
+
+            .icon {
+                position: absolute;
+                border-radius: 5px;
+                transform: rotate(45deg);
+                @include sqr(50px);
+                @include flex(center, center);
+                background-color: $color-green;
+                left: 26px;
+                top: -25px;
+
+                img {
+                    transform: rotate(-45deg);
+                }
+            }
+
+            h4 {
+                @include fz-20;
+                font-weight: 700;
+            }
+
+            p {
+                @include fz-16;
+            }
+
+            a {
+                @include fz-16;
+                font-weight: 700;
+                color: $color-FF9900;
             }
         }
     }
