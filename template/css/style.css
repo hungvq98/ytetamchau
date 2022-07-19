@@ -6265,16 +6265,19 @@ canvas {
   top: 0;
   z-index: 0;
   pointer-events: none;
-  display: none;
+  opacity: 0;
 }
 @media (min-width: 1024px) {
   canvas {
-    display: block;
+    opacity: 1;
   }
 }
 
 .over-hidden-body {
   overflow-x: hidden;
+}
+.over-hidden-body main {
+  overflow: hidden;
 }
 
 .breadcrumb {
@@ -6947,6 +6950,12 @@ canvas {
   height: 80%;
   width: auto;
 }
+.brand.white-bg .brand-wrap {
+  background: white;
+}
+.brand.white-bg .swiper-slide {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
 
 .category {
   position: sticky;
@@ -7370,9 +7379,10 @@ canvas {
     height: 85.5%;
   }
 }
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
   .shape-points {
-    display: none;
+    opacity: 0;
+    pointer-events: none;
   }
 }
 .shape-points-lst {
@@ -7426,6 +7436,11 @@ canvas {
   border: 3px solid #FF9900;
   background: white;
 }
+@media (max-width: 1024px) {
+  .shape-point {
+    opacity: 0;
+  }
+}
 .shape-point-des {
   width: 5px;
   height: 5px;
@@ -7436,7 +7451,8 @@ canvas {
 }
 @media (max-width: 1024px) {
   .shape-point-des {
-    display: none;
+    opacity: 0;
+    pointer-events: none;
   }
 }
 @media (max-width: 1024px) {
@@ -8386,7 +8402,6 @@ canvas {
   padding-top: 12rem;
   padding-bottom: 27.8rem;
   background: #F8F8F8;
-  overflow-x: hidden;
 }
 @media (max-width: 1024px) {
   .sec-cate {

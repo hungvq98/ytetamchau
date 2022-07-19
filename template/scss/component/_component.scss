@@ -418,10 +418,10 @@ canvas {
   // width: 100%;
   z-index: 0;
   pointer-events: none;
-  display: none;
+  opacity: 0;
 
   @media (min-width: 1024px) {
-    display: block;
+    opacity: 1;
   }
 
 
@@ -429,4 +429,10 @@ canvas {
 
 .over-hidden-body {
   overflow-x: hidden;
+
+  main {
+    overflow: hidden;
+  }
+
+  
 }

@@ -8,14 +8,14 @@
     var _canvas;
     var _ctx;
     var _lines = new Array(); //This array will store all lines (option)
-    var _me = this;
+    var _me = this
     var _parent = param || document;
 
     //Initialize Canvas object
     _canvas = $("<canvas/>")
       .attr("width", $(_parent).width())
       .attr("height", $(_parent).height());
-    $("body").append(_canvas);
+    $("main").append(_canvas);
 
     this.drawLine = function (option) {
       //It will push line to array.
@@ -154,9 +154,9 @@
             _ctx.lineTo(_right.x, _right.y);
 
             if (!_ctx.setLineDash) {
-              _ctx.setLineDash = function () {};
+              // _ctx.setLineDash = function () {};
             } else {
-              _ctx.setLineDash(_dash);
+              // _ctx.setLineDash(_dash);
             }
             _ctx.lineWidth = option.width || 2;
             _ctx.strokeStyle = _color;

@@ -2,10 +2,9 @@
     padding-top: 12rem;
     padding-bottom: 27.8rem;
     background: $color-F8F8F8;
-    overflow-x: hidden;
+
     @media (max-width: 1024px) {
         padding-bottom: 60rem;
-        // overflow: hidden;
         padding-top: 7rem;
     }
 
@@ -13,6 +12,7 @@
         padding-bottom: 105rem;
         padding-top: 5rem;
     }
+
     .cate {
         &-wrap {
             width: 100%;
@@ -21,7 +21,4 @@
         }
     }
 
-    .container {
-        // overflow: hidden;
-    }
 }
