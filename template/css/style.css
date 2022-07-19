@@ -7935,6 +7935,7 @@ canvas {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
+  flex-wrap: wrap;
 }
 .equipment-product .info.wh ul li {
   padding-left: 20px;
@@ -8034,8 +8035,20 @@ canvas {
   width: 50%;
   padding-right: 15px;
 }
+@media screen and (max-width: 900px) {
+  .equipment-product .info-left {
+    width: 100%;
+    margin-bottom: 20px;
+    padding-right: 0;
+  }
+}
 .equipment-product .info-right {
   width: 50%;
+}
+@media screen and (max-width: 900px) {
+  .equipment-product .info-right {
+    width: 100%;
+  }
 }
 .equipment-product .info-right .collapse {
   box-shadow: none;
@@ -8131,6 +8144,11 @@ canvas {
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+
+.popup-equipment {
+  height: calc(100vh - 50px);
+  overflow-y: auto;
 }
 
 .home-banner {
