@@ -40,7 +40,11 @@
     line-height: 1.2;
   }
 
-  &-5 {}
+  &-5 {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.57;
+  }
 
   &-6 {}
 
@@ -79,6 +83,11 @@
   flex-direction: row-reverse;
   justify-content: flex-end;
 
+  @media (max-width: 600px) {
+    padding: 0.8rem 1.5rem 0.7rem;
+    font-size: 1.4rem;
+  }
+
   &::before {
     content: url("../assets/img/svg/arrow.svg");
     height: 5.76px;
@@ -104,7 +113,7 @@
 
   &:hover {
     @media (min-width: 991px) {
-      background: $color-FF9900;
+      background: white;
 
       &::after {
         -webkit-clip-path: circle(105% at center);
@@ -114,11 +123,15 @@
   }
 
   &-l {
-    min-width: 20.1rem;
+    width: 20.1rem;
   }
 
   &-md {
-    min-width: 17.4rem;
+    width: 17.4rem;
+  }
+
+  &-sm {
+    width: 16.5rem;
   }
 }
 
@@ -434,5 +447,5 @@ canvas {
     overflow: hidden;
   }
 
-  
+
 }

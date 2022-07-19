@@ -12,36 +12,41 @@ export default function PointsConnect() {
   //     strokeWidth : 1,
   // });
 
-  var mySVG = $(".sec-cate").connect();
+  const cate = document.querySelectorAll(".sec-cate")
 
-  const listPointStart = document.querySelectorAll(".shape-point");
-  const listPointEnd = document.querySelectorAll(".shape-point-des");
+  if(cate) {
+    var mySVG = $(".sec-cate").connect();
 
-  const createLine = () => {
-    listPointStart.forEach((ele, i) => {
-      mySVG.drawLine({
-        left_node: ele,
-        right_node: listPointEnd[i],
-        horizantal_gap: 5,
-        style: "solid",
-        status: "cus",
-        width: "1",
+    const listPointStart = document.querySelectorAll(".shape-point");
+    const listPointEnd = document.querySelectorAll(".shape-point-des");
+  
+    const createLine = () => {
+      listPointStart.forEach((ele, i) => {
+        mySVG.drawLine({
+          left_node: ele,
+          right_node: listPointEnd[i],
+          horizantal_gap: 5,
+          style: "solid",
+          status: "cus",
+          width: "1",
+        });
+        // $(".des-12").draggable({
+        //   drag: function (event, ui) {
+        //     mySVG.redrawLines();
+        //   },
+        // });
+        // $("#des-12").draggable({
+        //   drag: function (event, ui) {
+        //     mySVG.redrawLines();
+        //   },
+        // });
       });
-      // $(".des-12").draggable({
-      //   drag: function (event, ui) {
-      //     mySVG.redrawLines();
-      //   },
-      // });
-      // $("#des-12").draggable({
-      //   drag: function (event, ui) {
-      //     mySVG.redrawLines();
-      //   },
-      // });
-    });
-  };
-  createLine();
-
-  window.addEventListener("resize", () => {
+    };
     createLine();
-  });
+  
+    window.addEventListener("resize", () => {
+      createLine();
+    });
+
+  }
 }

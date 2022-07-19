@@ -12,6 +12,8 @@ import Popup from "./module/popup.js";
 import ScrollTopModule from "./module/ScrollTopModule.js";
 import Circle from "./module/circle.js";
 import PointsConnect from "./module/PointsConnect.js";
+import Form from "./module/form.js";
+import InputFile from "./module/InputFile.js";
 // import toTopModule from "./module/toTopModule.js"
 
 window.addEventListener("DOMContentLoaded", () => {
@@ -29,5 +31,7 @@ window.addEventListener("DOMContentLoaded", () => {
   ScrollTopModule();
   Circle();
   PointsConnect();
+  Form();
+  InputFile();
   // toTopModule();
 });
