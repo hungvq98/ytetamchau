@@ -70,6 +70,7 @@
         position: relative;
         z-index: 10;
         max-width: 92rem;
+        margin: 0 auto;
     }
 
     &-lst {
@@ -315,7 +316,8 @@
 
             &-item {
                 @include fz-22;
-                &.active{
+
+                &.active {
                     color: $color-FF9900;
                 }
             }
@@ -335,7 +337,6 @@
     &-wrap {
         position: relative;
         z-index: 1;
-        overflow: hidden;
         color: white;
 
         .intro {
@@ -357,5 +358,9 @@
 
     &-tit {
         margin-bottom: 1.5rem;
+    }
+
+    &-silde {
+        overflow: hidden;
     }
 }

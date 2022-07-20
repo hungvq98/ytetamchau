@@ -4,7 +4,10 @@ export default function tabModule() {
     ".tab-content .tab-content-item"
   );
   const itemInro = document.querySelectorAll(".introduce-lst-item")
-  const lstImageIntro = document.querySelectorAll(".introduce-lstImg-item")
+  const lstImageIntro = document.querySelectorAll(".introduce-lstImg-item");
+
+  const tabCate = document.querySelectorAll(".category-tab-item");
+  const contentCate = document.querySelectorAll(".category-content-item")
 
   const resetTabActive = (lstTabi, lstTab) => {
     lstTabi.forEach((ele) => {
@@ -36,6 +39,19 @@ export default function tabModule() {
 
         if (lstImageIntro[i]) {
           lstImageIntro[i].classList.add("active");
+        }
+      });
+    })
+  }
+
+  if (tabCate) {
+    tabCate.forEach((ele, i) => {
+      ele.addEventListener("click", () => {
+        resetTabActive(tabCate, contentCate);
+        ele.classList.add("active");
+
+        if (contentCate[i]) {
+          contentCate[i].classList.add("active");
         }
       });
     })

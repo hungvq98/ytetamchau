@@ -39,3 +39,41 @@
         }
     }
 }
+
+.navigation {
+    display: none;
+
+    &-swiper {
+        position: absolute;
+        top: 60%;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        @include mid-flex();
+        background: $color-C4C4C4;
+        z-index: 99;
+        font-size: 3.2rem;
+        cursor: pointer;
+        @media (max-width: 1200px) {
+            display: none;
+        }
+    }
+
+    &-noBg {
+        background: transparent;
+    }
+
+    &-next {
+        right: -9rem;
+        @media (max-width: 1400px) {
+            right: -1rem;
+        }
+    }
+
+    &-prev {
+        left: -9rem;
+        @media (max-width: 1400px) {
+            left: -1rem;
+        }
+    }
+}

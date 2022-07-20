@@ -77,9 +77,9 @@ export default function SwiperF() {
       slidesPerView: 1,
       loop: true,
       centeredSlides: true,
-      pagination: {
-        el: ".shape-pagination",
-        clickable: true,
+      navigation: {
+        nextEl: ".navigation-partner-next",
+        prevEl: ".navigation-partner-prev",
       },
       breakpoints: {
         420: {
