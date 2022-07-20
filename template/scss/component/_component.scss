@@ -8,7 +8,11 @@
     color: white;
   }
 
-  &-xl {}
+  &-xl {
+    font-weight: 700;
+    @include fz-48;
+    line-height: 1.18;
+  }
 
   &-l {
     font-weight: 700;
@@ -46,7 +50,17 @@
     line-height: 1.57;
   }
 
-  &-6 {}
+  &-6 {
+    font-weight: 400;
+    @include fz-16;
+    line-height: 1.5;
+  }
+
+  &-7 {
+    font-weight: 700;
+    @include fz-16;
+    line-height: 1.5;
+  }
 
   &-uppercase {
     text-transform: uppercase;
@@ -155,19 +169,20 @@
 
 .padding-sec-0 {
   padding-top: 6rem;
-  padding-bottom: 9.6rem;
+  padding-bottom: 12rem;
 
   @media (max-width: 800px) {
-    padding-bottom: 5.6rem;
+    padding-top: 4.5rem;
+    padding-bottom: 9rem;
   }
 
   @media (max-width: 420px) {
-    padding-bottom: 3rem;
+    padding: 3rem 0;
   }
 }
 
 .padding-sec-1 {
-  padding: 9.6rem 0;
+  padding: 8rem 0;
 
   @media (max-width: 800px) {
     padding: 5.6rem 0;

@@ -1,193 +1,503 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Về chúng tôi</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Về chúng tôi</title>
 
-   <link rel="stylesheet" href="./js/libs/swiper/swiper-bundle.min.css">
-   <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./js/libs/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-   <header class="header">
-       <div class="header-top">
-           <div class="container">
-               <div class="header-top-wrap">
-                   <div class="logo">
-                       <img src="./assets/img/logo/logo.png" alt="">
-                   </div>
-                   <div class="header-info">
-                       <div class="header-item">
-                           <img src="./assets/img/svg/wall-clock 1.svg" alt="">
-                           <div class="header-item-box">
-                               <span>Làm việc</span>
-                               <p>Thứ 2 - Thứ 7 08:30 - 18:00</p>
-                           </div>
-                       </div>
-                       <div class="header-item">
-                           <img src="./assets/img/svg/phone-call 1.svg" alt="">
-                           <div class="header-item-box">
-                               <span>Hotline</span>
-                               <p>+84 122 456 789</p>
-                           </div>
-                       </div>
-                       <div class="header-item">
-                           <img src="./assets/img/svg/mail.svg" alt="">
-                           <div class="header-item-box">
-                               <span>Email</span>
-                               <p>Info123@gmail.com</p>
-                           </div>
-                       </div>
-                   </div>
-               </div>
-           </div>
-       </div>
-       <div class="header-bottom">
-           <div class="container">
-               <div class="header-bottom-wrap">
-                   <div class="logo">
-                       <img src="./assets/img/logo/logo.png" alt="">
-                   </div>
-                   <nav class="header-nav">
-                       <ul id="menu">
-                           <li class="parent"><a href="">Trang chủ</a></li>
-                           <li class="parent"><a href="">Về chúng tôi</a></li>
-                           <li class="parent"><a href="">Sản phẩm</a></li>
-                           <li class="parent">
-                               <a href="">Nghiên cứu & Phát triển</a><i class='bx bxs-chevron-down'></i>
-                               <ul class="child">
-                                   <li><a href="">Nghiên cứu</a></li>
-                                   <li><a href="">Phát triển</a></li>
-                                   <li><a href="">Phát triển</a></li>
-                               </ul>
-                           </li>
-                           <li class="parent"><a href="">Tin tức</a></li>
-                           <li class="parent"><a href="">Tuyển dụng</a></li>
-                           <li class="parent"><a href="">Liên hệ</a></li>
-                       </ul>
-                   </nav>
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-wrap">
+                    <div class="logo">
+                        <img src="./assets/img/logo/logo.png" alt="">
+                    </div>
+                    <div class="header-info">
+                        <div class="header-item">
+                            <img src="./assets/img/svg/wall-clock 1.svg" alt="">
+                            <div class="header-item-box">
+                                <span>Làm việc</span>
+                                <p>Thứ 2 - Thứ 7 08:30 - 18:00</p>
+                            </div>
+                        </div>
+                        <div class="header-item">
+                            <img src="./assets/img/svg/phone-call 1.svg" alt="">
+                            <div class="header-item-box">
+                                <span>Hotline</span>
+                                <p>+84 122 456 789</p>
+                            </div>
+                        </div>
+                        <div class="header-item">
+                            <img src="./assets/img/svg/mail.svg" alt="">
+                            <div class="header-item-box">
+                                <span>Email</span>
+                                <p>Info123@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <div class="header-bottom-wrap">
+                    <div class="logo">
+                        <img src="./assets/img/logo/logo.png" alt="">
+                    </div>
+                    <nav class="header-nav">
+                        <ul id="menu">
+                            <li class="parent"><a href="">Trang chủ</a></li>
+                            <li class="parent"><a href="">Về chúng tôi</a></li>
+                            <li class="parent"><a href="">Sản phẩm</a></li>
+                            <li class="parent">
+                                <a href="">Nghiên cứu & Phát triển</a><i class='bx bxs-chevron-down'></i>
+                                <ul class="child">
+                                    <li><a href="">Nghiên cứu</a></li>
+                                    <li><a href="">Phát triển</a></li>
+                                    <li><a href="">Phát triển</a></li>
+                                </ul>
+                            </li>
+                            <li class="parent"><a href="">Tin tức</a></li>
+                            <li class="parent"><a href="">Tuyển dụng</a></li>
+                            <li class="parent"><a href="">Liên hệ</a></li>
+                        </ul>
+                    </nav>
 
-                   <div class="burger burger-js">
-                       <div class="burger-line"></div>
-                       <div class="burger-line"></div>
-                       <div class="burger-line"></div>
-                   </div>
-                   <div class="menu-mobile mobilemenu-js">
-                       <div class="menu-mobile-wrap">
-                           <div class="wrap">
-                               <main>
-                                   <section id="vert-nav">
-                                       <nav role='navigation'>
-                                           <ul class="topmenu">
-                                               <li><a class="sidebarhead" href="#0">Trang chủ</a></li>
-                                               <li><a class="sidebarhead" href="#0">Về Chúng tôi</a></li>
-                                               <li><a class="sidebarhead" href="#0">Sản phẩm</a></a>
-                                                   <ul class="submenu">
-                                                       <li><a href="#0">Bandage</a></li>
-                                                       <li><a href="#0">Thread</a></li>
-                                                       <li><a href="#0">Hemostatic</a></li>
-                                                   </ul>
-                                               </li>
-                                               <li><a class="sidebarhead" href="#0">Nghiên cứu & phát triển</a></li>
-                                               <li><a class="sidebarhead" href="#0">Tin tức</a></li>
-                                               <li><a class="sidebarhead" href="#0">Tuyển dụng</a></li>
-                                               <li><a class="sidebarhead" href="#0">Liên hệ</a></li>
-                                           </ul>
-                                       </nav>
-                                   </section>
-                               </main>
-                           </div>
-                       </div>
-                   </div>
-               </div>
-           </div>
-       </div>
-   </header>
+                    <div class="burger burger-js">
+                        <div class="burger-line"></div>
+                        <div class="burger-line"></div>
+                        <div class="burger-line"></div>
+                    </div>
+                    <div class="menu-mobile mobilemenu-js">
+                        <div class="menu-mobile-wrap">
+                            <div class="wrap">
+                                <main>
+                                    <section id="vert-nav">
+                                        <nav role='navigation'>
+                                            <ul class="topmenu">
+                                                <li><a class="sidebarhead" href="#0">Trang chủ</a></li>
+                                                <li><a class="sidebarhead" href="#0">Về Chúng tôi</a></li>
+                                                <li><a class="sidebarhead" href="#0">Sản phẩm</a></a>
+                                                    <ul class="submenu">
+                                                        <li><a href="#0">Bandage</a></li>
+                                                        <li><a href="#0">Thread</a></li>
+                                                        <li><a href="#0">Hemostatic</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a class="sidebarhead" href="#0">Nghiên cứu & phát triển</a></li>
+                                                <li><a class="sidebarhead" href="#0">Tin tức</a></li>
+                                                <li><a class="sidebarhead" href="#0">Tuyển dụng</a></li>
+                                                <li><a class="sidebarhead" href="#0">Liên hệ</a></li>
+                                            </ul>
+                                        </nav>
+                                    </section>
+                                </main>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
-   <div class="menu-mobile-over mobilemenuover-js"></div>
+    <div class="menu-mobile-over mobilemenuover-js"></div>
 
-   <div class="bg-fade"></div>
+    <div class="bg-fade"></div>
 
-   <main class="main">
-       <div class="banner">
-           <img src="./assets/img/breadscrum.png" alt="">
-           <h1>Về chúng tôi</h1>
-           <ul class="breadcrumb wh">
-            <li class="breadcrumb-item wh"><a href="#" class="breadcrumb-link wh">Trang chủ</a></li>
-            <li class="breadcrumb-item wh"><a href="#" class="breadcrumb-link wh">Về chúng tôi</a></li>
-        </ul>
-       </div>
+    <main class="main">
+        <div class="banner">
+            <img src="./assets/img/breadscrum.png" alt="">
+            <h1>Về chúng tôi</h1>
+            <ul class="breadcrumb wh">
+                <li class="breadcrumb-item wh"><a href="#" class="breadcrumb-link wh">Trang chủ</a></li>
+                <li class="breadcrumb-item wh"><a href="#" class="breadcrumb-link wh">Về chúng tôi</a></li>
+            </ul>
+        </div>
 
-       
-   </main>
-   
+        <div class="sec-introduce padding-sec">
+            <div class="container">
+                <div class="introduce-wrap flex flex-wrap">
+                    <div class="introduce-content introduce-item">
+                        <h2 class="text-l introduce-tit m-b-16">Chào mừng tới Y Tế Tam Châu</h2>
 
-   <div class="move-to-top moveToTop">
-       <div class="pyramid"></div>
-       <div class="pyramid"></div>
-       <div class="pyramid"></div>
-   </div>
+                        <div class="introduce-lst">
+                            <div class="introduce-lst-item flex flex-ai-center active">
+                                <span class="introduce-num text-xl">1.</span>
+                                <div class="introduce-ct">
+                                    <h3 class="text-4 introduce-ct-tit">Lorem Ipsum is simply dummy text </h3>
+                                    <p class="text-1 introduce-ct-txt">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="introduce-lst-item flex flex-ai-center">
+                                <span class="introduce-num text-xl">2.</span>
+                                <div class="introduce-ct">
+                                    <h3 class="text-4 introduce-ct-tit">Lorem Ipsum is simply dummy text </h3>
+                                    <p class="text-1 introduce-ct-txt">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="introduce-lst-item flex flex-ai-center">
+                                <span class="introduce-num text-xl">3.</span>
+                                <div class="introduce-ct">
+                                    <h3 class="text-4 introduce-ct-tit">Lorem Ipsum is simply dummy text </h3>
+                                    <p class="text-1 introduce-ct-txt">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
 
-   <footer class="footer">
-       <div class="container">
-           <div class="footer-wrap">
-               <ul class="footer-item">
-                   <li>
-                       <div class="logo">
-                           <img src="./assets/img/logo/logo.png" alt="">
-                       </div>
-                   </li>
-                   <li>
-                       <p>
-                           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                           been the industry's standard dummy t
-                       </p>
-                   </li>
-                   <li>
-                       <div class="footer-socials">
-                           <a href=""><i class='bx bxl-facebook'></i></a>
-                           <a href=""><i class='bx bxl-linkedin'></i></a>
-                           <a href=""><i class='bx bxl-twitter'></i></a>
-                       </div>
-                   </li>
-               </ul>
-               <ul class="footer-item">
-                   <li class="head">Về chúng tôi</li>
-                   <ul class="footer-nav">
-                       <ul>
-                           <li><a href="">Trang chủ</a></li>
-                           <li><a href="">Về chúng tôi</a></li>
-                           <li><a href="">Sản phẩn</a></li>
-                       </ul>
-                       <ul>
-                           <li><a href="">Nghiên cứu & phát triển</a></li>
-                           <li><a href="">Tin tức</a></li>
-                           <li><a href="">Tuyển dụng</a></li>
-                       </ul>
-                   </ul>
+                    </div>
+                    <div class="introduce-image introduce-item">
+                        <div class="introduce-lstImg">
+                            <div class="introduce-lstImg-item active">
+                                <div class="img">
+                                    <img src="./assets/img/about-img-1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="introduce-lstImg-item">
+                                <div class="img">
+                                    <img src="./assets/img/about-img-1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="introduce-lstImg-item">
+                                <div class="img">
+                                    <img src="./assets/img/about-img-1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-               </ul>
-               <ul class="footer-item">
-                   <li class="head">Liên hệ</li>
-                   <li class="footer-contact"><img src="./assets/img/svg/phone2.svg" alt=""><a href="">Hotline : +84
-                           124 456 789</a></li>
-                   <li class="footer-contact"><img src="./assets/img/svg/mail2.svg" alt=""><a href="">Email :
-                           info123@gmail.com</a></li>
-                   <li class="footer-contact"><img src="./assets/img/svg/locate.svg" alt=""><a href="">Địa chỉ :
-                           373/226 Lý Thường Kiệt,
-                           phường 8
-                           quận Tân Bình, TP.HCM </a></li>
-               </ul>
-           </div>
-       </div>
-       <div class="footer-credit">
-           Web được thiết kế bởi Mona Meida
-       </div>
-   </footer>
-   <script src="./js/libs/jquery/jquery.min.js"></script>
-   <script src="./js/libs/swiper/swiper-bundle.min.js"></script>
-   <script src="./js/libs/magnific/jquery.magnific-popup.min.js"></script>
-   <script src="./js/main.js" type="module"></script>
+        <div class="sec-reason">
+            <div class="container">
+                <div class="reason-wrap">
+                    <h2 class="text-l text-center m-b-16 reason-tit">Tại sao chọn chúng tôi</h2>
+                    <p class="text-center text-6 reason-txt">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy
+                        text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                    </p>
+                    <div class="reason-content pos-relative">
+                        <div class="reason-image">
+                            <div class="bg-shape"></div>
+                            <img src="./assets/img/equipment-1.png" alt="">
+                        </div>
+
+                        <div class="reason-lst-wrap">
+                            <div class="reason-lst left">
+                                <div class="reason-lst-item">
+                                    <div class="gen-icon">
+                                        <img src="./assets/img/svg/stethoscope.svg" alt="">
+                                    </div>
+                                    <h3 class="text-2 m-b-8 tit">Đội ngũ chuyên nghiệp</h3>
+                                    <p class="text-1 text">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                                    </p>
+                                </div>
+                                <div class="reason-lst-item flex-jc-end">
+                                    <div class="gen-icon">
+                                        <img src="./assets/img/svg/medicine.svg" alt="">
+                                    </div>
+                                    <h3 class="text-2 m-b-8 tit">Đội ngũ chuyên nghiệp</h3>
+                                    <p class="text-1 text">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="reason-lst right">
+                                <div class="reason-lst-item">
+                                    <div class="gen-icon">
+                                        <img src="./assets/img/svg/stethoscope.svg" alt="">
+                                    </div>
+                                    <h3 class="text-2 m-b-8 tit">Đội ngũ chuyên nghiệp</h3>
+                                    <p class="text-1 text">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                                    </p>
+                                </div>
+                                <div class="reason-lst-item">
+                                    <div class="gen-icon">
+                                        <img src="./assets/img/svg/medicine.svg" alt="">
+                                    </div>
+                                    <h3 class="text-2 m-b-8 tit">Đội ngũ chuyên nghiệp</h3>
+                                    <p class="text-1 text">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sec-equipment-ab padding-sec-0">
+            <div class="container">
+                <div class="eqab-wap">
+                    <div class="eqab-item flex flex-wrap">
+                        <div class="eqab-image eqab-item-cpn">
+                            <div class="img m-b-16">
+                                <img src="./assets/img/about-img-2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="eqab-content eqab-item-cpn">
+                            <div class="icon">
+                                <img src="./assets/img/svg/first-aid-kit.svg" alt="">
+                            </div>
+                            <p class="text-2 text-gr">Lorem Ipsum is simply dummy text </p>
+                            <p class="text-1 text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book</p>
+                        </div>
+                    </div>
+                    <div class="eqab-item flex flex-wrap">
+                        <div class="eqab-image eqab-item-cpn">
+                            <div class="img m-b-16">
+                                <img src="./assets/img/about-img-3.png" alt="">
+                            </div>
+                        </div>
+                        <div class="eqab-content eqab-item-cpn">
+                            <div class="icon">
+                                <img src="./assets/img/svg/heart-beat.svg" alt="">
+                            </div>
+                            <p class="text-2 text-gr">Lorem Ipsum is simply dummy text </p>
+                            <p class="text-1 text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sec-partner padding-sec-1">
+            <div class="container">
+                <div class="partner-wrap">
+                    <h2 class="text-center color-white text-l partner-tit">Đối tác và khách hàng</h2>
+                    <div class="partner-silde">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="rate m-b-30">
+                                    <ul class="rate-lst flex">
+                                        <li class="rate-item active">
+                                            <i class='bx bxs-star'></i>
+                                        </li>
+                                        <li class="rate-item active">
+                                            <i class='bx bxs-star'></i>
+                                        </li>
+                                        <li class="rate-item active">
+                                            <i class='bx bxs-star'></i>
+                                        </li>
+                                        <li class="rate-item active">
+                                            <i class='bx bxs-star'></i>
+                                        </li>
+                                        <li class="rate-item">
+                                            <i class='bx bxs-star'></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <p class="intro text-6">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummytext ever since the 1500s, Lorem Ipsum
+                                    has
+                                </p>
+                                <div class="avatar">
+                                    <img src="./assets/img/avatar.png" alt="">
+                                </div>
+                                <p class="name text-7">Wade Warren</p>
+                                <p class="position text-uppercase text-5">TESTER</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="rate m-b-30">
+                                    <ul class="rate-lst flex">
+                                        <li class="rate-item active">
+                                            <i class='bx bxs-star'></i>
+                                        </li>
+                                        <li class="rate-item active">
+                                            <i class='bx bxs-star'></i>
+                                        </li>
+                                        <li class="rate-item active">
+                                            <i class='bx bxs-star'></i>
+                                        </li>
+                                        <li class="rate-item active">
+                                            <i class='bx bxs-star'></i>
+                                        </li>
+                                        <li class="rate-item">
+                                            <i class='bx bxs-star'></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <p class="intro text-6">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummytext ever since the 1500s, Lorem Ipsum
+                                    has
+                                </p>
+                                <div class="avatar">
+                                    <img src="./assets/img/avatar.png" alt="">
+                                </div>
+                                <p class="name text-7">Wade Warren</p>
+                                <p class="position text-uppercase text-5">TESTER</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="rate m-b-30">
+                                    <ul class="rate-lst flex">
+                                        <li class="rate-item active">
+                                            <i class='bx bxs-star'></i>
+                                        </li>
+                                        <li class="rate-item active">
+                                            <i class='bx bxs-star'></i>
+                                        </li>
+                                        <li class="rate-item active">
+                                            <i class='bx bxs-star'></i>
+                                        </li>
+                                        <li class="rate-item active">
+                                            <i class='bx bxs-star'></i>
+                                        </li>
+                                        <li class="rate-item">
+                                            <i class='bx bxs-star'></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <p class="intro text-6">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummytext ever since the 1500s, Lorem Ipsum
+                                    has
+                                </p>
+                                <div class="avatar">
+                                    <img src="./assets/img/avatar.png" alt="">
+                                </div>
+                                <p class="name text-7">Wade Warren</p>
+                                <p class="position text-uppercase text-5">TESTER</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="brand">
+            <div class="brand-wrap">
+                <div class="swiper brandSwiper">
+                    <div class="swiper-wrapper">
+                        <a href="" class="swiper-slide">
+                            <p class="slide-over">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard
+                            </p>
+                            <img src="./assets/img/iconBVQ2.png" alt="">
+                        </a>
+                        <a href="" class="swiper-slide">
+                            <p class="slide-over">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard
+                            </p>
+                            <img src="./assets/img/iconBVQTP.png" alt="">
+                        </a>
+                        <a href="" class="swiper-slide">
+                            <p class="slide-over">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard
+                            </p>
+                            <img src="./assets/img/iconBVTD.png" alt="">
+                        </a>
+                        <a href="" class="swiper-slide">
+                            <p class="slide-over">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard
+                            </p>
+                            <img src="./assets/img/iconBVQ2.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+    <div class="move-to-top moveToTop">
+        <div class="pyramid"></div>
+        <div class="pyramid"></div>
+        <div class="pyramid"></div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrap">
+                <ul class="footer-item">
+                    <li>
+                        <div class="logo">
+                            <img src="./assets/img/logo/logo.png" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy t
+                        </p>
+                    </li>
+                    <li>
+                        <div class="footer-socials">
+                            <a href=""><i class='bx bxl-facebook'></i></a>
+                            <a href=""><i class='bx bxl-linkedin'></i></a>
+                            <a href=""><i class='bx bxl-twitter'></i></a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="footer-item">
+                    <li class="head">Về chúng tôi</li>
+                    <ul class="footer-nav">
+                        <ul>
+                            <li><a href="">Trang chủ</a></li>
+                            <li><a href="">Về chúng tôi</a></li>
+                            <li><a href="">Sản phẩn</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="">Nghiên cứu & phát triển</a></li>
+                            <li><a href="">Tin tức</a></li>
+                            <li><a href="">Tuyển dụng</a></li>
+                        </ul>
+                    </ul>
+
+                </ul>
+                <ul class="footer-item">
+                    <li class="head">Liên hệ</li>
+                    <li class="footer-contact"><img src="./assets/img/svg/phone2.svg" alt=""><a href="">Hotline : +84
+                            124 456 789</a></li>
+                    <li class="footer-contact"><img src="./assets/img/svg/mail2.svg" alt=""><a href="">Email :
+                            info123@gmail.com</a></li>
+                    <li class="footer-contact"><img src="./assets/img/svg/locate.svg" alt=""><a href="">Địa chỉ :
+                            373/226 Lý Thường Kiệt,
+                            phường 8
+                            quận Tân Bình, TP.HCM </a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-credit">
+            Web được thiết kế bởi Mona Meida
+        </div>
+    </footer>
+    <script src="./js/libs/jquery/jquery.min.js"></script>
+    <script src="./js/libs/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/libs/magnific/jquery.magnific-popup.min.js"></script>
+    <script src="./js/main.js" type="module"></script>
 </body>
+
 </html>

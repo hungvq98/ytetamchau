@@ -29,12 +29,12 @@ export default function Popup() {
           faeBg.classList.add("show");
           document.body.style.overflow = "hidden";
 
-          const readMore = ele.querySelector(".btn");
-          readMore.addEventListener("click", () => {
-            pupc.classList.remove("active");
-            faeBg.classList.remove("show");
-            document.body.style.overflow = "auto";
-          });
+          // const readMore = ele.querySelector(".btn");
+          // readMore.addEventListener("click", () => {
+          //   pupc.classList.remove("active");
+          //   faeBg.classList.remove("show");
+          //   document.body.style.overflow = "auto";
+          // });
         });
       });
 
