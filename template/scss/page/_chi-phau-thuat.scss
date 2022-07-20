@@ -3,20 +3,22 @@
     padding-bottom: 27.8rem;
     background: $color-F8F8F8;
 
-    @media (max-width: 1024px) {
-        padding-bottom: 60rem;
+
+    @media (max-width: 1200px) {
+        padding-bottom: 7rem;
         padding-top: 7rem;
     }
 
     @media (max-width: 600px) {
-        padding-bottom: 105rem;
-        padding-top: 5rem;
+        padding-bottom: 3rem;
+        padding-top: 3rem;
     }
 
     .cate {
         &-wrap {
             width: 100%;
             justify-content: center;
+            position: relative;
             // overflow: hidden;
         }
     }
