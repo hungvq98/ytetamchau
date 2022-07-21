@@ -62,8 +62,9 @@ export default function SwiperF() {
 
   if (circle) {
     const swiper = new Swiper(".shape-slide", {
-      spaceBetween: 50,
+      spaceBetween: 20,
       slidesPerView: 1,
+      slidesPerGroup: 1,
       pagination: {
         el: ".shape-pagination",
         clickable: true,
