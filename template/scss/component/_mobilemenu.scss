@@ -28,13 +28,26 @@
         top: 60px;
     }
     &-wrap {
-        overflow-y: auto;
         height: 100%;
-        &::-webkit-scrollbar {
-            width: 2px;
+        @include flexx();
+        flex-direction: column;
+        .wrap {
+            overflow-y: auto;
+            height: 100%;
+            &::-webkit-scrollbar {
+                width: 2px;
+            }
+            &::-webkit-scrollbar-thumb {
+                background-color: $color-green;
+            }
         }
-        &::-webkit-scrollbar-thumb {
-            background-color: $color-green;
+        .header-info {
+            margin-top: auto;
+            @include flexx();
+            @include flex-col(flex-start,flex-start);
+            .header-item {
+                margin-bottom: 10px;
+            }
         }
     }
 }
