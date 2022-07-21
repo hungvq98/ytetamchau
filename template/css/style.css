@@ -7672,7 +7672,7 @@ canvas {
     height: 25rem;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 960px) {
   .shape {
     width: 32rem;
     height: 32rem;
