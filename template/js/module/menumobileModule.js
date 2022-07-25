@@ -16,5 +16,11 @@ export default function() {
                 on = "on";
             }
         });
+
+        over.addEventListener("click", () => {
+            mobilemenu.classList.remove("active");
+            burger.classList.remove("active");
+            over.classList.remove("active");
+        })
     }
 }

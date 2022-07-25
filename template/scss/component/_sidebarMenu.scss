@@ -25,6 +25,8 @@ section {
         li.openmenu>a {
             color: $color-green;
             // border-bottom: 1px solid $color-green-dark;
+            background-color: 0 0;
+            transition: all 0.5s;
             &.sidebarhead {
                 background-color: $color-green-light;
             }

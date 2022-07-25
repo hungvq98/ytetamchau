@@ -1,7 +1,7 @@
 export default function moduleSwiper() {
   var swiper = new Swiper(".brandSwiper", {
-    slidesPerView: 6,
-    spaceBetween: 30,
+    slidesPerView: 1.5,
+    spaceBetween: 10,
     centeredSlides: true,
     loop: true,
     pagination: {
@@ -12,18 +12,26 @@ export default function moduleSwiper() {
       320: {
         slidesPerView: 1.5,
       },
-      426: {
-        slidesPerView: 2,
+      600: {
+        slidesPerView: 2.8,
+        spaceBetween: 10,
       },
-      768: {
-        slidesPerView: 4,
+      800: {
+        slidesPerView: 3.5,
+        spaceBetween: 20,
+      },
+      1024: {
+        slidesPerView: 3.8,
+        spaceBetween: 20,
       },
       1200: {
-        slidesPerView: 6,
+        slidesPerView: 4.3,
+        spaceBetween: 30,
       },
     },
   });
   var swiper = new Swiper(".homeSwiper", {
+    speed: 1000,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
