@@ -59,12 +59,19 @@
         }
 
         .img {
-            height: 80%;
             overflow: hidden;
             position: relative;
-
+            padding-top: 77%;
+            @include max(980px) {
+                padding-top: 100%;
+            }
             img {
                 @include img100x;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
             }
 
             border-radius: 5px 5px 0px 0px;
@@ -124,7 +131,6 @@
         }
 
         .info {
-            height: 20%;
             padding: 20px;
             background-color: $color-green-light;
             @include flex-col(center, center);
@@ -132,7 +138,7 @@
             .title {
                 @include fz-18;
                 font-weight: 700;
-                @include limit(2);
+                @include limit(1);
             }
 
             .color {
