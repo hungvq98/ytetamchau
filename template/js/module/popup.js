@@ -53,7 +53,7 @@ export default function Popup() {
   };
 
   if (itemPr) {
-    showPUListBtn(itemPr, pu);
+    // showPUListBtn(itemPr, pu);
   }
 
   if (pucv) {
