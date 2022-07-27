@@ -105,18 +105,18 @@
 }
 
 .popup-cv {
-  padding: 5rem 7rem 5.5rem;
+  padding: 5rem 7rem 3.1rem;
 
   @media (max-width: 1024px) {
-    padding: 4rem 5rem 4rem;
+    padding: 4rem 5rem 1.7rem;
   }
 
   @media (max-width: 600px) {
-    padding: 3rem 2rem 3rem;
+    padding: 3rem 2rem 0.6rem;
   }
 
   @media (max-width: 420px) {
-    padding: 2rem 1rem 2rem;
+    padding: 2rem 1rem 0rem;
   }
 
   .upload {
@@ -142,6 +142,25 @@
       font-weight: bold;
     }
   }
+
+  // .wpcf7 {
+  //   .wpcf7-response-output {
+  //     position: absolute;
+  //     bottom: 6px;
+  //     margin: 0;
+  // }
+
+  // }
+}
+.popup-equipment {
+  padding-top: 0;
+  padding-bottom: 3.1rem;
+}
+
+.popup-wrap {
+  max-height: 100vh;
+  // overflow-x: hidden;
+  // overflow-y: auto;
 }
 
 
@@ -157,6 +176,7 @@
   cursor: pointer;
   font-size: 2.5rem;
   transform: translate(50%, -50%);
+  z-index: 5;
 
   @media (max-width: 1200px) {
     transform: translate(-20%, 20%);

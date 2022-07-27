@@ -17,6 +17,7 @@
         padding: 0 1.5rem;
         position: relative;
         margin-bottom: 3rem;
+
         @media (max-height: 600px) {
             margin-bottom: 2rem;
         }
@@ -24,6 +25,7 @@
         @media (max-width: 800px) {
             padding: 0 1rem;
         }
+
         @media (max-width: 800px) {
             margin-bottom: 2rem;
         }
@@ -43,6 +45,10 @@
             border-radius: 10px;
             padding: 1.1rem 3rem;
             transition: all 0.3s ease-out;
+
+            &::placeholder {
+                display: none;
+            }
 
             @media (max-width: 800px) {
                 padding: 0.8rem 2rem;
@@ -90,6 +96,13 @@
             background: $color-FF9900;
             transform: translateY(-80%);
             color: white;
+
+            &-always {
+                top: 0;
+                background: $color-FF9900;
+                transform: translateY(-80%);
+                color: white;
+            }
         }
     }
 
@@ -99,22 +112,22 @@
 
     &-content {
         .input {
-            min-height: 20.8rem;
+            height: 20.8rem;
 
             @media (max-width: 800px) {
-                min-height: 15rem;
+                height: 15rem;
             }
 
             @media (max-width: 600px) {
-                min-height: 12rem;
+                height: 12rem;
             }
 
             @media (max-width: 420px) {
-                min-height: 10rem;
+                height: 10rem;
             }
 
             @media (max-width: 350px) {
-                min-height: 7rem;
+                height: 7rem;
             }
         }
     }
@@ -138,4 +151,6 @@
         }
     }
 
+   
 }
+

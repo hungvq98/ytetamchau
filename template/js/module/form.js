@@ -1,6 +1,7 @@
 export default function Form() {
   const input = document.querySelectorAll(".form-input .input");
   const label = document.querySelectorAll(".form-label");
+  const labelDOB = document.querySelector(".form-label[for='dob']")
 
   if (input) {
     const inputChange = () => {
@@ -42,5 +43,10 @@ export default function Form() {
         }
       });
     });
+
+    if (labelDOB) {
+      // console.log(labelDOB)
+      labelDOB.classList.add("clicked-always")
+    }
   }
 }

@@ -1,17 +1,38 @@
 .brand {
     width: 100%;
+    overflow: hidden;
 
     &-wrap {
         padding: 60px 0;
         background-color: $color-gray;
 
+        @media (max-width: 800px) {
+            padding: 4.5rem 0;
+          }
+        
+          @media (max-width: 420px) {
+            padding: 3rem 0;
+          }
+
         .swiper-slide {
-            min-height: 142px;
+            padding-top: 12.14%;
             border-radius: 5px;
             @include flex(center, center);
             position: relative;
             overflow: hidden;
             background-color: $color-white;
+
+            @media (max-width: 800px) {
+                padding-top: 18.14%;
+            }
+
+            @media (max-width: 600px) {
+                padding-top: 28.14%;
+            }
+
+            @media (max-width: 420px) {
+                padding-top: 42%;
+            }
 
             &:hover {
                 .slide-over {
@@ -31,17 +52,34 @@
                 color: $color-white;
                 background-color: $color-black-opa6;
                 font-weight: 400;
-                transition: 0.3s;
+                transition: all 0.5s ease-in-out;
                 opacity: 0;
+                z-index: 1;
+
+                @media (max-width: 600px) {
+                    padding: 1.5rem;
+                }
             }
 
-            img {
-                height: 80%;
-                width: auto;
+            .img {
+                @include abs-fw;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);    
+                padding: 2.1rem 0;  
+                text-align: center;
+                height: max-content;
+                @media (max-width: 600px) {
+                    padding: 1.5rem 0; 
+                } 
+                img {
+                    height: 100%;
+                    width: auto;
+                }
             }
         }
 
-        
+
     }
 
     &.white-bg {

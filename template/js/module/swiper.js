@@ -76,7 +76,6 @@ export default function SwiperF() {
     const swiper = new Swiper(".partner-silde", {
       spaceBetween: 20,
       slidesPerView: 1,
-      loop: true,
       centeredSlides: true,
       navigation: {
         nextEl: ".navigation-partner-next",

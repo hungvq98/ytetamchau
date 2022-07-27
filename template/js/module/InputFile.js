@@ -2,6 +2,8 @@ export default function InputFile() {
   const inputFile = document.querySelector(".form-upload input");
   const button = document.querySelector(".upload .label-upload");
   const the_return = document.querySelector(".name-file-choosed");
+  // fix wp
+  const wpinput = document.querySelector(".wpcf7-file")
 
   if (button) {
     button.addEventListener("keydown", function (event) {
@@ -10,7 +12,10 @@ export default function InputFile() {
       }
     });
     button.addEventListener("click", function (event) {
-      inputFile.focus();
+      // if(wpinput) {
+      //   wpinput.click();
+      // }
+      inputFile.click();
       return false;
     });
     inputFile.addEventListener("change", function (event) {

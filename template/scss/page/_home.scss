@@ -46,6 +46,25 @@
             position: relative;
             width: 100%;
             height: 100%;
+            overflow: hidden;
+
+            &-active {
+                .home-title {
+                    transform: translateX(0)!important;
+                }
+
+                .home-para {
+                    transform: translateX(0)!important;
+                }
+
+                .banner-item-intro {
+                    transform: translateX(0)!important;
+                }
+
+                .btn {
+                    transform: scale(1) !important;
+                }
+            }
 
 
             img {
@@ -70,13 +89,16 @@
         height: 100%;
         @include flex-col(flex-start, center);
         z-index: 2;
+        overflow: hidden;
 
-        ul {
-            li {
+        .banner-lst-intro  {
+            .banner-item-intro {
                 position: relative;
                 padding-left: 20px;
                 @include fz-16;
                 line-height: 2;
+                transform: translateX(-110%);
+                transition: all 0.8s;
 
                 &::after {
                     position: absolute;
@@ -89,13 +111,17 @@
 
         .btn {
             margin-top: 20px;
-
+            transform: scale(0);
+            transition: all 0.8s 1600ms;
         }
     }
 
     &-title {
         @include fz-50;
         font-weight: 700;
+        transform: translateX(-110%);
+        transition: all 0.8s 0.8s;
+        
 
         @include max(600px) {
             @include fz-30;
@@ -109,6 +135,9 @@
     &-para {
         @include fz-16;
         margin: 20px 0;
+        transform: translateX(-110%);
+        transition: all 0.8s 0.8s;
+        max-width: 56.8rem;
 
         @include max(500px) {
             margin: 10px 0;
@@ -153,6 +182,7 @@
     &-two {
         height: calc(100vw * (500/1728));
         position: relative;
+        overflow: hidden;
 
         @include max(1000px) {
             height: calc(100vw * (800/1728));
@@ -287,6 +317,7 @@
     &-three {
         height: calc(100vw * (550/1728));
         position: relative;
+        overflow: hidden;
 
         @include max(1000px) {
             height: calc(100vw * (800/1728));
@@ -460,10 +491,12 @@
 
     &-five {
         background: $color-F8F8F8;
+        overflow: hidden;
     }
 
     &-seven {
         padding: 6rem 0 0;
+        overflow: hidden;
 
         @media (max-width: 1200px) {
             padding: 6rem 0;
@@ -561,6 +594,7 @@
     }
 
     &-ten {
+        overflow: hidden;
         .news {
             &-wrap {
                 padding: 0;
@@ -608,7 +642,7 @@
                 }
 
                 @media (max-width: 800px) {
-                   margin-bottom: 1.5rem;
+                    margin-bottom: 1.5rem;
                 }
             }
 

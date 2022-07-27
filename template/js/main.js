@@ -14,9 +14,13 @@ import Circle from "./module/circle.js";
 import PointsConnect from "./module/PointsConnect.js";
 import Form from "./module/form.js";
 import InputFile from "./module/InputFile.js";
+import AddAnimation from "./module/AddAnimation.js";
+import AosModule from "./module/AosModule.js";
+import headerScroll from "./module/headerScroll.js";
 // import toTopModule from "./module/toTopModule.js"
 
 window.addEventListener("DOMContentLoaded", () => {
+  AddAnimation();
   moduleSwiper();
   textareaModule();
   collapseModule();
@@ -33,5 +37,8 @@ window.addEventListener("DOMContentLoaded", () => {
   PointsConnect();
   Form();
   InputFile();
+  AosModule();
+  headerScroll()
+
   // toTopModule();
 });

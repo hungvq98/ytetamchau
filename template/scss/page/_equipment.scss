@@ -2,7 +2,7 @@
     &-wrap {
         padding: 60px 0;
     }
-    
+
     &-popup {
         &-overlay {
             left: 0;
@@ -13,7 +13,11 @@
             position: fixed;
             z-index: 2;
         }
-        
+
+        &-wrap {
+            margin: 0 -1.5rem;
+        }
+
     }
 
     &-box {
@@ -24,6 +28,7 @@
 
         @include max(800px) {
             flex-wrap: wrap-reverse;
+            margin: 0 -7.5px;
         }
     }
 
@@ -32,8 +37,13 @@
         width: calc(50% - 30px);
 
         @include max(800px) {
+            margin: 0 7.5px;
+            width: calc(50% - 15px);
+        }
+
+        @include max(600px) {
             width: 100%;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
     }
 
@@ -41,15 +51,20 @@
         margin: 0 15px;
         width: calc(50% - 30px);
 
+        @include max(800px) {
+            margin: 0 7.5px;
+            width: calc(50% - 15px);
+        }
+
         .img {
             img {
                 @include img100x;
             }
         }
 
-        @include max(800px) {
+        @include max(600px) {
             width: 100%;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
 
             .img {
                 @include flex(center, center);
@@ -101,6 +116,11 @@
         border-radius: 50px 0 50px 0;
         margin-top: 16px;
 
+        @media (max-width: 800px) {
+            width: 100%;
+            padding: 2rem 1.2rem;
+        }
+
         ul {
             li {
                 padding-left: 20px;
@@ -108,6 +128,10 @@
                 @include fz-16;
                 line-height: 2;
                 @include flex(flex-start, flex-start);
+
+                @media (max-width: 800px) {
+                    padding-left: 15px;
+                }
 
                 &::after {
                     content: '';
@@ -131,14 +155,17 @@
         }
 
         .img {
-            height: 40%;
-            min-height: 300px;
             background-color: $color-white;
             border-radius: 5px 5px 0 0;
             border: 1px solid $color-black-opa3;
             padding: 25px;
             @include flex(center, center);
             position: relative;
+            padding-top: 39.1%;
+
+            @media (max-height: 600px) {
+                padding-top: 30%;
+            }
 
             img {
                 @include imgContain;
@@ -180,10 +207,27 @@
             background-color: $color-green;
             padding: 24px;
 
+            @media (max-width: 800px) {
+                padding: 1.2rem;
+            }
+
             &.wh {
                 background-color: $color-white;
                 @include flex(flex-start, flex-start);
                 flex-wrap: wrap;
+                max-height: 34rem;
+                overflow: auto;
+                @media (max-height: 950px) {
+                    max-height: 30rem;
+                }
+
+                @media (max-height: 800px) {
+                    max-height: 24.5rem;
+                }
+
+                @media (max-height: 600px) {
+                    max-height: 22rem;
+                }
 
                 ul {
                     li {
@@ -210,7 +254,8 @@
                 @include fz-32;
                 font-weight: 700;
                 color: $color-white;
-                display: flex;
+                @include flexx();
+                line-height: 1.25;
 
                 &.wh {
                     color: $color-black;
@@ -239,6 +284,10 @@
                 font-weight: 400;
                 @include limit(3);
 
+                @media (max-width: 800px) {
+                    font-size: 1.4rem;
+                }
+
                 &.wh {
                     color: $color-black;
                 }
@@ -252,6 +301,11 @@
                     line-height: 2;
                     @include flex(flex-start, flex-start);
                     color: $color-white;
+
+                    @media (max-width: 800px) {
+                        font-size: 1.4rem;
+                        padding-left: 15px;
+                    }
 
                     &::after {
                         content: '';
@@ -267,6 +321,7 @@
             &-left {
                 width: 50%;
                 padding-right: 15px;
+
                 @include max(900px) {
                     width: 100%;
                     margin-bottom: 20px;
@@ -276,14 +331,24 @@
 
             &-right {
                 width: 50%;
+
                 @include max(900px) {
                     width: 100%;
                 }
+
                 .collapse {
-                    
+
                     box-shadow: none;
 
                     margin-bottom: 20px;
+
+                    @media (max-width: 1200px) {
+                        margin-bottom: 1.5rem;
+                    }
+
+                    @media (max-width: 800px) {
+                        margin-bottom: 1rem;
+                    }
 
                     &.active {
                         box-shadow: $shadowall;
@@ -298,11 +363,17 @@
                         overflow: hidden;
                         @include flex(center, space-between);
                         text-transform: uppercase;
-                        height: 44px;
-                        padding: 15px;
+                        padding: 11px 16px;
                         border: 1px solid $color-black-opa1;
                         border-radius: 5px;
                         transition: 0.3s;
+                        line-height: 1.38;
+                        
+
+                        @media (max-width: 800px) {
+                            font-size: 1.4rem;
+                            padding: 8px 10px;
+                        }
 
                         &.active {
                             border: 1px solid transparent;
@@ -316,6 +387,10 @@
                             transition: 0.3s;
                             transform: rotate(270deg);
                             margin-right: 10px;
+
+                            @media (max-width: 1200px) {
+                                margin-right: 0;
+                            }
                         }
                     }
 
@@ -343,7 +418,6 @@
 
     &-detail {
         background-color: $color-gray;
-        padding: 60px 0;
 
         &-title {
             @include fz-32;
@@ -357,12 +431,21 @@
             margin: 0 -15px;
             flex-wrap: wrap;
 
+            @include max(800px) {
+                margin: 0 -7.5px;
+            }
+
             .equipment-product {
                 width: calc(50% - 30px);
                 margin: 15px;
                 cursor: pointer;
 
-                @include max(700px) {
+                @include max(800px) {
+                    width: calc(50% - 15px);
+                    margin: 7.5px;
+                }
+
+                @include max(600px) {
                     width: 100%;
                 }
             }
@@ -382,8 +465,27 @@
             }
         }
     }
-}
-.popup-equipment {
-    height: calc(100vh - 50px);
-    overflow-y: auto;
+
+    .box-1 {
+        @media (max-width: 800px) {
+            margin-bottom: 2rem;
+        }
+
+        .equipment {
+            @media (max-width: 800px) {
+                &-left {
+                    width: 100%;
+                }
+
+                &-right {
+                    width: 100%;
+
+                    .img {
+                        width: 50%;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+    }
 }

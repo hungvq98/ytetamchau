@@ -12,12 +12,14 @@ export default function Popup() {
       pupc.classList.add("active");
       faeBg.classList.add("show");
       document.body.style.overflow = "hidden";
-      const close = pu.querySelector(".close");
-      close.addEventListener("click", () => {
-        pupc.classList.remove("active");
-        faeBg.classList.remove("show");
-        document.body.style.overflow = "auto";
-      });
+      const close = pupc.querySelector(".close");
+      if (close) {
+        close.addEventListener("click", () => {
+          pupc.classList.remove("active");
+          faeBg.classList.remove("show");
+          document.body.style.overflow = "auto";
+        });
+      }
     });
   };
 
