@@ -43,6 +43,10 @@ textarea {
     padding-top: 112px;
     padding-bottom: 80px;
   }
+
+  &.over {
+    overflow-x: hidden;
+  }
 }
 
 .container {

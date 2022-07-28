@@ -61,7 +61,7 @@ export default function Popup() {
   }
 
   if (lstItemEqip) {
-    showPUListBtn(lstItemEqip, puEqipment);
+    // showPUListBtn(lstItemEqip, puEqipment);
     lstItemEqip.forEach((ele) => {
       console.log("click");
     });

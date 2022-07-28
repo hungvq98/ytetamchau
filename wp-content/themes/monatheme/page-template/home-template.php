@@ -295,7 +295,7 @@ while (have_posts()) :
                                                     <div class="cir">
                                                         <img src="<?php echo site_url(); ?>/template/assets/img/svg/cir.png" alt="">
                                                     </div>
-                                                    <a href="<?php echo get_category_link($item->term_id);?>" class="btn btn-yellow"><?php _e("Đăng ký ngay", "monamedia")?></a>
+                                                    <a href="<?php echo get_category_link($item->term_id); ?>" class="btn btn-yellow"><?php _e("Xem thêm", "monamedia")?></a>
                                                 </div>
                                             </div>
                                             <div class="category-content-img d-item">
@@ -484,7 +484,7 @@ while (have_posts()) :
                             ?>
                         </div>
                     </div>
-                    <div class="content-text flex flex-wrap flex-jc-center" data-aos="zoom-in" data-aos-duration="1000">
+                    <div class="content-text flex flex-wrap flex-jc-center flex-ai-center" data-aos="zoom-in" data-aos-duration="1000">
                         <h3 class="text-center text-l tit"><?php echo $title_destination_home; ?></h3>
                         <p class="text-center text-1 txt m-b-30">
                             <?php echo $desc_destination_home; ?>
@@ -566,6 +566,12 @@ while (have_posts()) :
                                 </div>
                             </div>
                         <?php endif; ?>
+                        <div class="navigation-noBg navigation-partner-next navigation-next navigation-swiper">
+                        <i class='bx bx-chevron-right'></i>
+                    </div>
+                    <div class="navigation-noBg navigation-partner-prev navigation-prev navigation-swiper">
+                        <i class='bx bx-chevron-left'></i>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -597,7 +603,11 @@ while (have_posts()) :
                     ?>
                         <div class="news-main news-i pos-relative" data-aos="fade-right" data-aos-duration="1000">
                             <div class="img img-main m-b-16">
-                                <?php the_post_thumbnail('570x399'); ?>
+                                <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('570x399'); ?></a>
+                                <div class="news-date pos-abs flex flex-column flex-ai-center">
+                                    <span class="day"><?php echo get_the_date("d", get_the_ID()); ?></span>
+                                    <span class="month"><?php echo get_the_date("F", get_the_ID()); ?></span>
+                                </div>
                             </div>
                             <a href="<?php the_permalink(); ?>" class="text-4 m-b-8"><?php the_title(); ?></a>
                             <p class="text-10"><?php echo get_the_excerpt(); ?></p>
@@ -633,7 +643,7 @@ while (have_posts()) :
                         ?>
                             <div class="news-lst-item flex" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="<?php echo $s;?>">
                                 <div class="img img-item">
-                                    <?php the_post_thumbnail('170x113'); ?>
+                                    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('170x113'); ?></a>
                                 </div>
                                 <div class="news-ct">
                                     <div class="date">

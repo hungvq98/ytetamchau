@@ -131,6 +131,40 @@
                                                 </section>
                                             </main>
                                         </div>
+
+                                        <div class="header-info">
+                                            <?php if (mona_get_option('mona_work_time_contact') != "") : ?>
+                                                <div class="header-item">
+                                                    <img src="<?php echo site_url(); ?>/template/assets/img/svg/wall-clock 1.svg" alt="">
+                                                    <div class="header-item-box">
+                                                        <span><?php _e('Làm việc :', 'monamedia')?></span>
+                                                        <p><?php mona_option('mona_work_time_contact'); ?></p>
+                                                    </div>
+                                                </div>
+                                            <?php endif; ?>
+                                            <?php if (mona_get_option('mona_hotline_contact_footer') != "") : ?>
+                                                <div class="header-item">
+                                                    <img src="<?php echo site_url(); ?>/template/assets/img/svg/phone-call 1.svg" alt="">
+                                                    <div class="header-item-box">
+                                                        <span><?php _e('Hotline :', 'monamedia')?></span>
+                                                        <p>
+                                                            <a href="tel:<?php mona_option('mona_link_hotline_contact_footer'); ?>"><?php mona_option('mona_hotline_contact_footer'); ?></a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            <?php endif; ?>
+                                            <?php if (mona_get_option('mona_email_contact_footer') != "") : ?>
+                                                <div class="header-item">
+                                                    <img src="<?php echo site_url(); ?>/template/assets/img/svg/mail.svg" alt="">
+                                                    <div class="header-item-box">
+                                                        <span><?php _e('Email :', 'monamedia')?></span>
+                                                        <p>
+                                                            <a href="mailto:<?php mona_option('mona_email_contact_footer'); ?>"><?php mona_option('mona_email_contact_footer'); ?></a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            <?php endif; ?>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
