@@ -99,7 +99,7 @@
             @include flex(center, flex-start);
 
             li {
-                padding: 5px 10px;
+                padding: 8px 10px;
                 background-color: $color-white;
                 border-radius: 100px;
                 @include flex(flex-start, center);
@@ -165,7 +165,7 @@
             background-color: transparent;
         }
 
-        .parent a {
+        .parent a, .child a {
             @include flex(center, stretch);
             padding: 10px 5px;
             height: 100%;
@@ -196,6 +196,7 @@
             @include flex(flex-start, flex-start);
             flex-direction: column;
             border-radius: 12px;
+            min-width: 23rem;
 
             &::after {
                 content: "";
@@ -220,7 +221,7 @@
             &::after {
                 content: "";
                 width: 80%;
-                height: 1px;
+                height: 0.5px;
                 background-color: $color-black-opa2;
                 bottom: 0;
                 position: absolute;

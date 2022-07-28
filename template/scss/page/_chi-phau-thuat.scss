@@ -2,10 +2,14 @@
     padding-top: 12rem;
     padding-bottom: 27.8rem;
     background: $color-F8F8F8;
+    
+    @media (min-width: 960px) {
+        overflow-x: hidden;
+    }
 
 
     @media (max-width: 1200px) {
-        padding-bottom: 10rem;
+        padding-bottom: 15rem;
         padding-top: 10rem;
     }
 

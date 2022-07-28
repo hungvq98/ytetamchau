@@ -29,6 +29,10 @@ export default function Form() {
         inputChange();
       });
 
+      $(ele).bind("focus", function() {
+       $(input[i]).trigger('click');
+    });
+
       document.addEventListener("click", (e) => {
         const isClickInside = ele.contains(e.target);
         if (isClickInside) {

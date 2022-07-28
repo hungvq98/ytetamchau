@@ -21,6 +21,9 @@
             position: relative;
             overflow: hidden;
             background-color: $color-white;
+            @media (max-width: 992px) {
+                padding-top: 15.14%;
+            }
 
             @media (max-width: 800px) {
                 padding-top: 18.14%;
@@ -55,6 +58,8 @@
                 transition: all 0.5s ease-in-out;
                 opacity: 0;
                 z-index: 1;
+                line-height: 1.43;
+                text-align: center;
 
                 @media (max-width: 600px) {
                     padding: 1.5rem;

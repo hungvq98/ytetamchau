@@ -71,9 +71,12 @@
             border-bottom: 3px solid transparent;
             transition: all 1.5s;
             // z-index: -1;
+            display: none;
+            opacity: 0;
 
             @media (min-width: 960px) {
                 animation: shape-border 0.7s 1100ms forwards;
+                display: block;
             }
 
             @media (max-width: 1200px) {
@@ -374,7 +377,7 @@
     &-icon {
         width: 5rem;
         height: 5rem;
-        background: black;
+        // background: black;
         @include mid-flex();
         border-radius: 50%;
 
