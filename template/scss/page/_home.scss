@@ -204,7 +204,9 @@
             bottom: 0px;
             height: 110%;
             z-index: 2;
-
+            @include min(2200px) {
+                height:100%;
+            }
             @include max(700px) {
                 display: none;
             }
