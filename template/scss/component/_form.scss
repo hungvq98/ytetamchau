@@ -59,6 +59,15 @@
             }
         }
 
+        .input[type=date] {
+            &::-webkit-calendar-picker-indicator {
+                opacity: 0;
+                z-index: 1;
+                cursor: pointer;
+            }
+            color: rgba(0, 0, 0, 0.3);
+        }
+
         .input-focus {
             border: 1px solid $color-FF9900;
         }
@@ -151,6 +160,5 @@
         }
     }
 
-   
-}
 
+}

@@ -1,6 +1,7 @@
 @import url("../js/libs/swiper/swiper-bundle.min.css");
 @import url("../js/libs/boxicons-2.1.2/css/boxicons.css");
 @import url("../js/libs/aos/aos.css");
+@import url("../js/libs/datepicker/jquery-ui.css");
 @import url("../js/libs/magnific/magnific-popup.css");
 @import url("../assets/font/Roboto/OTF/stylesheet.css");
 html,
@@ -3276,6 +3277,14 @@ canvas {
   .form-control .input {
     font-size: 1.2rem;
   }
+}
+.form-control .input[type=date] {
+  color: rgba(0, 0, 0, 0.3);
+}
+.form-control .input[type=date]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  z-index: 1;
+  cursor: pointer;
 }
 .form-control .input-focus {
   border: 1px solid #FF9900;

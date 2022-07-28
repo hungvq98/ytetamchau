@@ -50,7 +50,7 @@ export default function Form() {
 
     if (labelDOB) {
       // console.log(labelDOB)
-      labelDOB.classList.add("clicked-always")
+      // labelDOB.classList.add("clicked-always")
     }
   }
 }
