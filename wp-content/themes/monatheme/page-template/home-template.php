@@ -566,7 +566,7 @@ while (have_posts()) :
                                 </div>
                             </div>
                         <?php endif; ?>
-                        <div class="navigation-noBg navigation-partner-next navigation-next navigation-swiper">
+                    <div class="navigation-noBg navigation-partner-next navigation-next navigation-swiper">
                         <i class='bx bx-chevron-right'></i>
                     </div>
                     <div class="navigation-noBg navigation-partner-prev navigation-prev navigation-swiper">
