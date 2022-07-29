@@ -3212,6 +3212,14 @@ canvas {
   }
 }
 
+.ui-widget-content .ui-icon {
+  background-image: url("../assets/img/svg/ui-icons_444444_256x240.png") !important;
+}
+
+.ui-widget-header .ui-icon {
+  background-image: url("../assets/img/svg/ui-icons_444444_256x240.png") !important;
+}
+
 .form-wrap {
   margin: 0 -1.5rem;
 }

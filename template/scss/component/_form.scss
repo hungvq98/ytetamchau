@@ -1,3 +1,10 @@
+.ui-widget-content .ui-icon {
+    background-image: url("../assets/img/svg/ui-icons_444444_256x240.png") !important;
+}
+
+.ui-widget-header .ui-icon {
+    background-image: url("../assets/img/svg/ui-icons_444444_256x240.png") !important;
+}
 .form {
     &-wrap {
         margin: 0 -1.5rem;
@@ -67,7 +74,7 @@
             }
             color: rgba(0, 0, 0, 0.3);
         }
-
+        
         .input-focus {
             border: 1px solid $color-FF9900;
         }
