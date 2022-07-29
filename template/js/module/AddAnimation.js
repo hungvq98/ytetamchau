@@ -131,14 +131,16 @@ export default function AddAnimation() {
     });
   };
   if (shapeCol) {
-    if (pageYOffset >= 200) {
-      createAnimationShape();
-    } else {
-      window.addEventListener("scroll", () => {
-        if (pageYOffset >= 200) {
-          createAnimationShape();
-        } 
-      })
-    }
+    // if (pageYOffset >= 200) {
+    //   createAnimationShape();
+    // } else {
+    //   window.addEventListener("scroll", () => {
+    //     if (pageYOffset >= 200) {
+    //       createAnimationShape();
+    //     }
+    //   })
+    // }
+
+    createAnimationShape();
   }
 }

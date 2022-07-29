@@ -43,9 +43,9 @@ input:-webkit-autofill:hover,
 input:-webkit-autofill:active,
 input:-webkit-autofill:focus {
     background-color: #F4F3F4 !important;
-    color: #555 !important;
+    color: #000 !important;
     -webkit-box-shadow: 0 0 0 1000px #F4F3F4 inset !important;
-    -webkit-text-fill-color: #555555 !important;
+    -webkit-text-fill-color: #000 !important;
 }
 
 .main {

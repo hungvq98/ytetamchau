@@ -77,6 +77,8 @@ export default function SwiperF() {
       spaceBetween: 20,
       slidesPerView: 1,
       centeredSlides: true,
+      speed:800,
+      loop: true,
       navigation: {
         nextEl: ".navigation-partner-next",
         prevEl: ".navigation-partner-prev",
