@@ -18,6 +18,7 @@ import AddAnimation from "./module/AddAnimation.js";
 import AosModule from "./module/AosModule.js";
 import headerScroll from "./module/headerScroll.js";
 import dateModule from "./module/dateModule.js";
+import listItemModule from "./module/listItemModule.js"
 // import toTopModule from "./module/toTopModule.js"
 
 window.addEventListener("DOMContentLoaded", () => {
@@ -41,6 +42,7 @@ window.addEventListener("DOMContentLoaded", () => {
   AosModule();
   headerScroll()
   dateModule();
+  listItemModule();
 
   // toTopModule();
 });

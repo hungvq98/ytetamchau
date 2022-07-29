@@ -5,4 +5,51 @@
             
         }
     }
+    
+}
+.star {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-content: start;
+}
+
+.star-list {
+    position: relative;
+    height: 20px;
+}
+
+.star-flex {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+
+.star-flex .icon {
+    width: 18px;
+    height: 18px;
+}
+
+.star-flex .icon:not(:first-child) {
+    margin-left: 4px;
+}
+
+.star-filter {
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    height: 100%;
+    width: 0;
+}
+
+.star-total {
+    font-weight: 300;
+    margin-left: auto;
+    padding-left: 10px;
 }
